@@ -102,6 +102,7 @@
     </div>
   </header>
 <?php }else{ ?>
+
   <header class="site-header" data-version="3" role="banner" id="site-head">
     <div class="w-100 float-left border-bottom-1 to-slide">
       <div class="container">
@@ -113,15 +114,17 @@
                   <a href="/" title="<?php print $site_name.' - '.$site_slogan; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name.' - '.$site_slogan; ?>"></a>
                 </div>
               <?php endif; ?>
-              <ul class="header-contacts">
-                <li><i class="glyphicon glyphicon-phone"></i> <span class="hidden-xs"><?php print t('Phone');?>: </span><?php print $phone_contact;?></li>
-                <li><i class="glyphicon glyphicon-envelope"></i> <span class="hidden-xs"><?php print t('Email');?>: </span><?php print $contact_email;?></li>
-              </ul>
-              <?php if($social_network): ?>
-                <!-- Social icons start //-->
-                <?php print $social_network; ?>
-                <!-- Social icons end //-->
-              <?php endif; ?>
+              <div class="header-info">
+                <ul class="header-contacts">
+                  <li><i class="glyphicon glyphicon-phone"></i> <span class="hidden-xs"><?php print t('Phone');?>: </span><?php print $phone_contact;?></li>
+                  <li><i class="glyphicon glyphicon-envelope"></i> <span class="hidden-xs"><?php print t('Email');?>: </span><?php print $contact_email;?></li>
+                </ul>
+                <?php if($social_network): ?>
+                  <!-- Social icons start //-->
+                  <?php print $social_network; ?>
+                  <!-- Social icons end //-->
+                <?php endif; ?>
+              </div>
             </div>
             <div class="site-header-right">
               <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md"><i class="glyphicon glyphicon-align-justify"></i></a>
@@ -146,9 +149,13 @@
         <div class="col-lg-12">
           <a href="#mobile-menu" class="mobile-menu-btn second hidden-lg hidden-md"><i class="glyphicon glyphicon-align-justify"></i></a>
           <?php if($page['main_menu']): ?>
-            <!-- Navigation start //-->
             <?php print render($page['main_menu']); ?>
-            <!-- Navigation end //-->
+          <?php endif; ?>
+          <?php if($page['menu_school']): ?>
+            <?php print render($page['menu_school']); ?>
+          <?php endif; ?>
+          <?php if($page['menu_students']): ?>
+            <?php print render($page['menu_students']); ?>
           <?php endif; ?>
         </div>
       </div>

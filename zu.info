@@ -5,7 +5,7 @@ version = 'VERSION'
 core = '7.x'
 screenshot = 'screenshot.png'
 
-;add css
+;; add css
 stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/animate.min.css
 stylesheets[all][] = css/jquery.mmenu.all.css
@@ -31,8 +31,9 @@ stylesheets[all][] = fonts/web-simbols/css/fontello.css
 stylesheets[all][] = fonts/zocial/css/fontello.css
 stylesheets[all][] = css/helpers.css
 stylesheets[all][] = css/update.css
+stylesheets[all][] = less/design.less
 
-;add js
+;; add js
 scripts[] = js/jquery-1.11.2.min.js
 scripts[] = js/jquery-ui.min.js
 scripts[] = js/modernizr-2.6.2-respond-1.1.0.min.js
@@ -57,10 +58,11 @@ scripts[] = js/map-options.js
 scripts[] = js/main.js
 scripts[] = js/update.js
 
-;Core regions
-
+;; Core regions
 regions[search] = 'Search header 3'
 regions[main_menu] = 'Main menu'
+regions[menu_school] = 'Menu School'
+regions[menu_students] = 'Menu Students'
 regions[slider] = 'Slider'
 regions[content] = 'Main content'
 regions[sidebar_first] = 'Sidebar left'

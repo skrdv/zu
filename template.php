@@ -1,10 +1,12 @@
 <?php
 $zu_skin = theme_get_setting('zu_skin', 'zu');
+
 if(!empty($zu_skin)){
   $skin_color = '/css/skins/'.$zu_skin.'.css';
 }else{
   $skin_color = '/css/skins/default.css';
 }
+
 $css_skin = array(
   '#tag' => 'link', // The #tag is the html tag - <link />
   '#attributes' => array( // Set up an array of attributes inside the tag
@@ -110,13 +112,18 @@ function zu_preprocess_file_entity(&$variables) {
   }
 }
 
-function zu_menu_tree($variables) {
-    return '<ul id="my_id" class="my_new_class">' . $variables['tree'] . '</ul>';
-  }
 
+function zu_menu_tree__main_menu(array $variables) {
+  return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
+}
 
+function zu_menu_tree__menu_school(array $variables) {
+  $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
+  return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
+}
 
-function zu_menu_tree__main_menu($variables) {
+function zu_menu_tree__menu_students(array $variables) {
+  $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
 

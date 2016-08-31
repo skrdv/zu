@@ -5,7 +5,6 @@ var path = Drupal.settings.pathToTheme;
 	$( 'document' ).ready(function() {
 
 		/*	Settings	*/
-
 		var useRTL = false,
 			usePreloader = true,
 			useDarkTheme = false,
@@ -14,7 +13,7 @@ var path = Drupal.settings.pathToTheme;
 			useTopMargin = false,
 			useBottomMargin = false,
 			useCustomMainMenuAnimation = false,			//	please do not change
-			useStickedMainMenu = true,
+			useStickedMainMenu = false,
 //			setCustomMainMenuAnimationIn = 'fadeInLeft',
 //			setCustomMainMenuAnimationOut = 'flipOutY',
 			setMainMenuAnimation = 'slide',				//	slide, fade or show
@@ -114,7 +113,7 @@ var path = Drupal.settings.pathToTheme;
 
 			setParallaxSpeed = 6;
 
-		}		
+		}
 
 		/*	Mobile menu */
 
@@ -122,7 +121,7 @@ var path = Drupal.settings.pathToTheme;
 
 	    $('#mobile-menu').mmenu({
             extensions      : [ 'widescreen', 'theme-dark', 'effect-slide-menu' ],
-            
+
             counters        : true,
             dividers        : {
                 fixed   : true
@@ -275,7 +274,7 @@ var path = Drupal.settings.pathToTheme;
 
 				$('#site-head').scrollFix();
 
-			}, 1000 );			
+			}, 1000 );
 
 			$(window).scroll(function () {
 
@@ -358,11 +357,11 @@ var path = Drupal.settings.pathToTheme;
 		$( '#header-search' ).find( 'form input' ).on( 'focus', function() {
 
 			$( '#header-search' ).addClass( 'focused' );
-			
+
 		} ).on( 'blur', function() {
 
 			$( '#header-search' ).removeClass( 'focused' );
-			
+
 		} );
 
 		/*	Widget search 	*/
@@ -496,7 +495,7 @@ var path = Drupal.settings.pathToTheme;
 
 		/*	Settings	*/
 
-		$( '#m-settings-btn-show' ).on( 'click', function() { 
+		$( '#m-settings-btn-show' ).on( 'click', function() {
 
 			$( this ).animate( {
 				'right': '-40px'
@@ -508,7 +507,7 @@ var path = Drupal.settings.pathToTheme;
 
 		} );
 
-		$( '#m-settings-btn-hide' ).on( 'click', function() { 
+		$( '#m-settings-btn-hide' ).on( 'click', function() {
 
 			$( '#m-settings-btn-show' ).animate( {
 				'right': '0px'
@@ -557,7 +556,7 @@ var path = Drupal.settings.pathToTheme;
 				$( '#m-settings-block' ).find( 'a[data-dir]' ).removeClass( 'active' );
 
 				$this.addClass( 'active' );
-				
+
 			} else if ( $this.attr( 'data-style' ) != undefined ) {
 
 				if ( $this.attr( 'data-style' ) == 'dark' ) {
@@ -573,7 +572,7 @@ var path = Drupal.settings.pathToTheme;
 				$( '#m-settings-block' ).find( 'a[data-style]' ).removeClass( 'active' );
 
 				$this.addClass( 'active' );
-				
+
 			} else if ( $this.attr( 'data-skin' ) != undefined ) {
 
 				$( '#site-skin' ).attr( 'href',+path+'/css/skins/' + $this.attr( 'data-skin' ) + '.css' );
@@ -581,7 +580,7 @@ var path = Drupal.settings.pathToTheme;
 				$( '#m-settings-block' ).find( 'a[data-skin]' ).removeClass( 'active' );
 
 				$this.addClass( 'active' );
-				
+
 			} else if ( $this.attr( 'data-pattern' ) != undefined ) {
 
 					console.log( $( '#page' ).length );
@@ -593,7 +592,7 @@ var path = Drupal.settings.pathToTheme;
 				$( '#m-settings-block' ).find( 'a[data-pattern], a[data-bg]' ).removeClass( 'active' );
 
 				$this.addClass( 'active' );
-				
+
 			} else if ( $this.attr( 'data-bg' ) != undefined ) {
 
 				$( '#page' ).attr( 'data-background', 'image' ).css( 'background-image', 'url('+path+'/img/body/img/' + $this.attr( 'data-bg' ) + '.jpg)' );
@@ -601,7 +600,7 @@ var path = Drupal.settings.pathToTheme;
 				$( '#m-settings-block' ).find( 'a[data-pattern], a[data-bg]' ).removeClass( 'active' );
 
 				$this.addClass( 'active' );
-				
+
 			}
 
 		} );

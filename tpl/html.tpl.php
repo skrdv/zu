@@ -46,7 +46,7 @@
     <?php $zu_disable_switch = theme_get_setting('zu_disable_switch','zu');?>
     <?php if($zu_disable_switch == 'on'): ?>
     <!-- Settings start //-->
-    <div class="m-settings-btn hidden" id="m-settings-btn-show"><i class="glyphicon glyphicon-cog"></i></div>
+    <div class="m-settings-btn" id="m-settings-btn-show"><i class="glyphicon glyphicon-cog"></i></div>
 
     <div class="m-settings" id="m-settings-block">
 
@@ -296,6 +296,10 @@
     <!-- Settings end //-->
     <?php endif; ?>
     <?php $background_style = theme_get_setting('background_style','zu'); ?>
+    <?php $zu_bg_image = theme_get_setting('zu_bg_image','zu'); ?>
+    <?php $zu_direction = theme_get_setting('zu_direction','zu'); ?>
+    <?php $zu_layout = theme_get_setting('zu_layout','zu'); ?>
+    <?php $zu_style = theme_get_setting('zu_style','zu'); ?>
     <div id="page" <?php print('data-background="'.$background_style.'"');?> style="background-image:url(<?php if($background_style == 'image'){print base_path().path_to_theme().'/img/body/img/'.$zu_bg_image.'.jpg';}else{print base_path().path_to_theme().'/img/body/pat/'.$zu_bg_pattern.'.png';}?>)">
 
         <!-- Page preloader start //-->
