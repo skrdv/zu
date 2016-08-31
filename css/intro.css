@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+a:hover {
+	text-decoration: underline;
+}
+.half {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.half.left {
+	background-color: #fff;
+}
+.half.left a {
+	color: #111;
+}
+.half.right {
+	background-color: #37c879;
+}
+.half.right a {
+	color: #fff;
+}

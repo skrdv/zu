@@ -1,0 +1,57 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.icon-brandico-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa200;&nbsp;'); }
+.icon-brandico-facebook-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa201;&nbsp;'); }
+.icon-brandico-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa202;&nbsp;'); }
+.icon-brandico-twitter-bird { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa203;&nbsp;'); }
+.icon-brandico-vimeo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa204;&nbsp;'); }
+.icon-brandico-vimeo-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa205;&nbsp;'); }
+.icon-brandico-tumblr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa206;&nbsp;'); }
+.icon-brandico-tumblr-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa207;&nbsp;'); }
+.icon-brandico-googleplus-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa208;&nbsp;'); }
+.icon-brandico-github-text { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa209;&nbsp;'); }
+.icon-brandico-github { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20a;&nbsp;'); }
+.icon-brandico-skype { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20b;&nbsp;'); }
+.icon-brandico-icq { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20c;&nbsp;'); }
+.icon-brandico-yandex { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20d;&nbsp;'); }
+.icon-brandico-yandex-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20e;&nbsp;'); }
+.icon-brandico-vkontakte-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa20f;&nbsp;'); }
+.icon-brandico-odnoklassniki { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa210;&nbsp;'); }
+.icon-brandico-odnoklassniki-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa211;&nbsp;'); }
+.icon-brandico-friendfeed { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa212;&nbsp;'); }
+.icon-brandico-friendfeed-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa213;&nbsp;'); }
+.icon-brandico-discover { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa214;&nbsp;'); }
+.icon-brandico-amex { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa215;&nbsp;'); }
+.icon-brandico-win8 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa216;&nbsp;'); }
+.icon-brandico-youku { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa217;&nbsp;'); }
+.icon-brandico-tudou { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa218;&nbsp;'); }
+.icon-brandico-box-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa219;&nbsp;'); }
+.icon-brandico-box { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21a;&nbsp;'); }
+.icon-brandico-diigo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21b;&nbsp;'); }
+.icon-brandico-instagram-filled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21c;&nbsp;'); }
+.icon-brandico-instagram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21d;&nbsp;'); }
+.icon-brandico-wordpress { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21e;&nbsp;'); }
+.icon-brandico-picasa { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa21f;&nbsp;'); }
+.icon-brandico-linkedin-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa220;&nbsp;'); }
+.icon-brandico-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa221;&nbsp;'); }
+.icon-brandico-lastfm-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa222;&nbsp;'); }
+.icon-brandico-lastfm { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa223;&nbsp;'); }
+.icon-brandico-jabber { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa224;&nbsp;'); }
+.icon-brandico-deviantart { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa225;&nbsp;'); }
+.icon-brandico-blogger { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa226;&nbsp;'); }
+.icon-brandico-blogger-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa227;&nbsp;'); }
+.icon-brandico-visa { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa228;&nbsp;'); }
+.icon-brandico-mastercard { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa229;&nbsp;'); }
+.icon-brandico-houzz { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa22a;&nbsp;'); }
+.icon-brandico-bandcamp { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa22b;&nbsp;'); }
+.icon-brandico-codepen { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa22c;&nbsp;'); }

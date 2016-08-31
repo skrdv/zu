@@ -1,0 +1,115 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.icon-zocial-duckduckgo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa100;&nbsp;'); }
+.icon-zocial-aim { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa101;&nbsp;'); }
+.icon-zocial-delicious { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa102;&nbsp;'); }
+.icon-zocial-paypal { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa103;&nbsp;'); }
+.icon-zocial-flattr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa104;&nbsp;'); }
+.icon-zocial-android { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa105;&nbsp;'); }
+.icon-zocial-eventful { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa106;&nbsp;'); }
+.icon-zocial-smashmag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa107;&nbsp;'); }
+.icon-zocial-gplus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa108;&nbsp;'); }
+.icon-zocial-wikipedia { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa109;&nbsp;'); }
+.icon-zocial-lanyrd { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10a;&nbsp;'); }
+.icon-zocial-calendar { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10b;&nbsp;'); }
+.icon-zocial-stumbleupon { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10c;&nbsp;'); }
+.icon-zocial-fivehundredpx { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10d;&nbsp;'); }
+.icon-zocial-pinterest { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10e;&nbsp;'); }
+.icon-zocial-bitcoin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa10f;&nbsp;'); }
+.icon-zocial-w3c { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa110;&nbsp;'); }
+.icon-zocial-foursquare { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa111;&nbsp;'); }
+.icon-zocial-html5 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa112;&nbsp;'); }
+.icon-zocial-ie { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa113;&nbsp;'); }
+.icon-zocial-klout { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa114;&nbsp;'); }
+.icon-zocial-weibo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa115;&nbsp;'); }
+.icon-zocial-instapaper { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa116;&nbsp;'); }
+.icon-zocial-viadeo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa117;&nbsp;'); }
+.icon-zocial-google { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa118;&nbsp;'); }
+.icon-zocial-flickr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa119;&nbsp;'); }
+.icon-zocial-evernote { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11a;&nbsp;'); }
+.icon-zocial-dribbble { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11b;&nbsp;'); }
+.icon-zocial-cc { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11c;&nbsp;'); }
+.icon-zocial-blogger { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11d;&nbsp;'); }
+.icon-zocial-appstore { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11e;&nbsp;'); }
+.icon-zocial-gowalla { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa11f;&nbsp;'); }
+.icon-zocial-guest { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa120;&nbsp;'); }
+.icon-zocial-reddit { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa121;&nbsp;'); }
+.icon-zocial-spotify { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa122;&nbsp;'); }
+.icon-zocial-digg { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa123;&nbsp;'); }
+.icon-zocial-forrst { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa124;&nbsp;'); }
+.icon-zocial-ninetyninedesigns { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa125;&nbsp;'); }
+.icon-zocial-grooveshark { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa126;&nbsp;'); }
+.icon-zocial-call { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa127;&nbsp;'); }
+.icon-zocial-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa128;&nbsp;'); }
+.icon-zocial-meetup { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa129;&nbsp;'); }
+.icon-zocial-vk { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12a;&nbsp;'); }
+.icon-zocial-plancast { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12b;&nbsp;'); }
+.icon-zocial-disqus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12c;&nbsp;'); }
+.icon-zocial-rss { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12d;&nbsp;'); }
+.icon-zocial-skype { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12e;&nbsp;'); }
+.icon-zocial-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa12f;&nbsp;'); }
+.icon-zocial-youtube { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa130;&nbsp;'); }
+.icon-zocial-vimeo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa131;&nbsp;'); }
+.icon-zocial-windows { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa132;&nbsp;'); }
+.icon-zocial-xing { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa133;&nbsp;'); }
+.icon-zocial-yahoo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa134;&nbsp;'); }
+.icon-zocial-chrome { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa135;&nbsp;'); }
+.icon-zocial-email { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa136;&nbsp;'); }
+.icon-zocial-macstore { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa137;&nbsp;'); }
+.icon-zocial-myspace { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa138;&nbsp;'); }
+.icon-zocial-podcast { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa139;&nbsp;'); }
+.icon-zocial-amazon { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13a;&nbsp;'); }
+.icon-zocial-steam { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13b;&nbsp;'); }
+.icon-zocial-yelp { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13c;&nbsp;'); }
+.icon-zocial-wordpress { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13d;&nbsp;'); }
+.icon-zocial-eventasaurus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13e;&nbsp;'); }
+.icon-zocial-tumblr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa13f;&nbsp;'); }
+.icon-zocial-soundcloud { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa140;&nbsp;'); }
+.icon-zocial-quora { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa141;&nbsp;'); }
+.icon-zocial-openid { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa142;&nbsp;'); }
+.icon-zocial-pinboard { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa143;&nbsp;'); }
+.icon-zocial-gmail { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa144;&nbsp;'); }
+.icon-zocial-lastfm { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa145;&nbsp;'); }
+.icon-zocial-songkick { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa146;&nbsp;'); }
+.icon-zocial-plurk { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa147;&nbsp;'); }
+.icon-zocial-itunes { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa148;&nbsp;'); }
+.icon-zocial-googleplay { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa149;&nbsp;'); }
+.icon-zocial-github-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14a;&nbsp;'); }
+.icon-zocial-github { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14b;&nbsp;'); }
+.icon-zocial-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14c;&nbsp;'); }
+.icon-zocial-ebay { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14d;&nbsp;'); }
+.icon-zocial-dropbox { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14e;&nbsp;'); }
+.icon-zocial-cloudapp { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa14f;&nbsp;'); }
+.icon-zocial-intensedebate { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa150;&nbsp;'); }
+.icon-zocial-eventbrite { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa151;&nbsp;'); }
+.icon-zocial-scribd { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa152;&nbsp;'); }
+.icon-zocial-posterous { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa153;&nbsp;'); }
+.icon-zocial-stripe { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa154;&nbsp;'); }
+.icon-zocial-opentable { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa155;&nbsp;'); }
+.icon-zocial-cart { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa156;&nbsp;'); }
+.icon-zocial-print { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa157;&nbsp;'); }
+.icon-zocial-angellist { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa158;&nbsp;'); }
+.icon-zocial-instagram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa159;&nbsp;'); }
+.icon-zocial-dwolla { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15a;&nbsp;'); }
+.icon-zocial-appnet { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15b;&nbsp;'); }
+.icon-zocial-statusnet { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15c;&nbsp;'); }
+.icon-zocial-acrobat { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15d;&nbsp;'); }
+.icon-zocial-drupal { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15e;&nbsp;'); }
+.icon-zocial-buffer { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa15f;&nbsp;'); }
+.icon-zocial-pocket { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa160;&nbsp;'); }
+.icon-zocial-bitbucket { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa161;&nbsp;'); }
+.icon-zocial-lego { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa162;&nbsp;'); }
+.icon-zocial-login { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa163;&nbsp;'); }
+.icon-zocial-stackoverflow { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa164;&nbsp;'); }
+.icon-zocial-hackernews { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa165;&nbsp;'); }
+.icon-zocial-lkdto { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa166;&nbsp;'); }

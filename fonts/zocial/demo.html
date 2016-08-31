@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head><!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8"><style>/*
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.span12 {
+  width: 940px;
+}
+.span11 {
+  width: 860px;
+}
+.span10 {
+  width: 780px;
+}
+.span9 {
+  width: 700px;
+}
+.span8 {
+  width: 620px;
+}
+.span7 {
+  width: 540px;
+}
+.span6 {
+  width: 460px;
+}
+.span5 {
+  width: 380px;
+}
+.span4 {
+  width: 300px;
+}
+.span3 {
+  width: 220px;
+}
+.span2 {
+  width: 140px;
+}
+.span1 {
+  width: 60px;
+}
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+small {
+  font-size: 85%;
+}
+h1 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 38.5px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+body {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  z-index: 10;
+}
+.footer {
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.the-icons {
+  font-size: 14px;
+  line-height: 24px;
+}
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #666;
+}
+.switch input {
+  margin-right: 0.3em;
+}
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}
+@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?73415337');
+      src: url('./font/fontello.eot?73415337#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?73415337') format('woff'),
+           url('./font/fontello.ttf?73415337') format('truetype'),
+           url('./font/fontello.svg?73415337#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+     </style>
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+        
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>
+        fontello
+         <small>font demo</small>
+      </h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
+      </label>
+    </div>
+    <div id="icons" class="container">
+      <div class="row">
+        <div title="Code: 0xa100" class="the-icons span3"><i class="demo-icon icon-zocial-duckduckgo">&#xa100;</i> <span class="i-name">icon-zocial-duckduckgo</span><span class="i-code">0xa100</span></div>
+        <div title="Code: 0xa101" class="the-icons span3"><i class="demo-icon icon-zocial-aim">&#xa101;</i> <span class="i-name">icon-zocial-aim</span><span class="i-code">0xa101</span></div>
+        <div title="Code: 0xa102" class="the-icons span3"><i class="demo-icon icon-zocial-delicious">&#xa102;</i> <span class="i-name">icon-zocial-delicious</span><span class="i-code">0xa102</span></div>
+        <div title="Code: 0xa103" class="the-icons span3"><i class="demo-icon icon-zocial-paypal">&#xa103;</i> <span class="i-name">icon-zocial-paypal</span><span class="i-code">0xa103</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa104" class="the-icons span3"><i class="demo-icon icon-zocial-flattr">&#xa104;</i> <span class="i-name">icon-zocial-flattr</span><span class="i-code">0xa104</span></div>
+        <div title="Code: 0xa105" class="the-icons span3"><i class="demo-icon icon-zocial-android">&#xa105;</i> <span class="i-name">icon-zocial-android</span><span class="i-code">0xa105</span></div>
+        <div title="Code: 0xa106" class="the-icons span3"><i class="demo-icon icon-zocial-eventful">&#xa106;</i> <span class="i-name">icon-zocial-eventful</span><span class="i-code">0xa106</span></div>
+        <div title="Code: 0xa107" class="the-icons span3"><i class="demo-icon icon-zocial-smashmag">&#xa107;</i> <span class="i-name">icon-zocial-smashmag</span><span class="i-code">0xa107</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa108" class="the-icons span3"><i class="demo-icon icon-zocial-gplus">&#xa108;</i> <span class="i-name">icon-zocial-gplus</span><span class="i-code">0xa108</span></div>
+        <div title="Code: 0xa109" class="the-icons span3"><i class="demo-icon icon-zocial-wikipedia">&#xa109;</i> <span class="i-name">icon-zocial-wikipedia</span><span class="i-code">0xa109</span></div>
+        <div title="Code: 0xa10a" class="the-icons span3"><i class="demo-icon icon-zocial-lanyrd">&#xa10a;</i> <span class="i-name">icon-zocial-lanyrd</span><span class="i-code">0xa10a</span></div>
+        <div title="Code: 0xa10b" class="the-icons span3"><i class="demo-icon icon-zocial-calendar">&#xa10b;</i> <span class="i-name">icon-zocial-calendar</span><span class="i-code">0xa10b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa10c" class="the-icons span3"><i class="demo-icon icon-zocial-stumbleupon">&#xa10c;</i> <span class="i-name">icon-zocial-stumbleupon</span><span class="i-code">0xa10c</span></div>
+        <div title="Code: 0xa10d" class="the-icons span3"><i class="demo-icon icon-zocial-fivehundredpx">&#xa10d;</i> <span class="i-name">icon-zocial-fivehundredpx</span><span class="i-code">0xa10d</span></div>
+        <div title="Code: 0xa10e" class="the-icons span3"><i class="demo-icon icon-zocial-pinterest">&#xa10e;</i> <span class="i-name">icon-zocial-pinterest</span><span class="i-code">0xa10e</span></div>
+        <div title="Code: 0xa10f" class="the-icons span3"><i class="demo-icon icon-zocial-bitcoin">&#xa10f;</i> <span class="i-name">icon-zocial-bitcoin</span><span class="i-code">0xa10f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa110" class="the-icons span3"><i class="demo-icon icon-zocial-w3c">&#xa110;</i> <span class="i-name">icon-zocial-w3c</span><span class="i-code">0xa110</span></div>
+        <div title="Code: 0xa111" class="the-icons span3"><i class="demo-icon icon-zocial-foursquare">&#xa111;</i> <span class="i-name">icon-zocial-foursquare</span><span class="i-code">0xa111</span></div>
+        <div title="Code: 0xa112" class="the-icons span3"><i class="demo-icon icon-zocial-html5">&#xa112;</i> <span class="i-name">icon-zocial-html5</span><span class="i-code">0xa112</span></div>
+        <div title="Code: 0xa113" class="the-icons span3"><i class="demo-icon icon-zocial-ie">&#xa113;</i> <span class="i-name">icon-zocial-ie</span><span class="i-code">0xa113</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa114" class="the-icons span3"><i class="demo-icon icon-zocial-klout">&#xa114;</i> <span class="i-name">icon-zocial-klout</span><span class="i-code">0xa114</span></div>
+        <div title="Code: 0xa115" class="the-icons span3"><i class="demo-icon icon-zocial-weibo">&#xa115;</i> <span class="i-name">icon-zocial-weibo</span><span class="i-code">0xa115</span></div>
+        <div title="Code: 0xa116" class="the-icons span3"><i class="demo-icon icon-zocial-instapaper">&#xa116;</i> <span class="i-name">icon-zocial-instapaper</span><span class="i-code">0xa116</span></div>
+        <div title="Code: 0xa117" class="the-icons span3"><i class="demo-icon icon-zocial-viadeo">&#xa117;</i> <span class="i-name">icon-zocial-viadeo</span><span class="i-code">0xa117</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa118" class="the-icons span3"><i class="demo-icon icon-zocial-google">&#xa118;</i> <span class="i-name">icon-zocial-google</span><span class="i-code">0xa118</span></div>
+        <div title="Code: 0xa119" class="the-icons span3"><i class="demo-icon icon-zocial-flickr">&#xa119;</i> <span class="i-name">icon-zocial-flickr</span><span class="i-code">0xa119</span></div>
+        <div title="Code: 0xa11a" class="the-icons span3"><i class="demo-icon icon-zocial-evernote">&#xa11a;</i> <span class="i-name">icon-zocial-evernote</span><span class="i-code">0xa11a</span></div>
+        <div title="Code: 0xa11b" class="the-icons span3"><i class="demo-icon icon-zocial-dribbble">&#xa11b;</i> <span class="i-name">icon-zocial-dribbble</span><span class="i-code">0xa11b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa11c" class="the-icons span3"><i class="demo-icon icon-zocial-cc">&#xa11c;</i> <span class="i-name">icon-zocial-cc</span><span class="i-code">0xa11c</span></div>
+        <div title="Code: 0xa11d" class="the-icons span3"><i class="demo-icon icon-zocial-blogger">&#xa11d;</i> <span class="i-name">icon-zocial-blogger</span><span class="i-code">0xa11d</span></div>
+        <div title="Code: 0xa11e" class="the-icons span3"><i class="demo-icon icon-zocial-appstore">&#xa11e;</i> <span class="i-name">icon-zocial-appstore</span><span class="i-code">0xa11e</span></div>
+        <div title="Code: 0xa11f" class="the-icons span3"><i class="demo-icon icon-zocial-gowalla">&#xa11f;</i> <span class="i-name">icon-zocial-gowalla</span><span class="i-code">0xa11f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa120" class="the-icons span3"><i class="demo-icon icon-zocial-guest">&#xa120;</i> <span class="i-name">icon-zocial-guest</span><span class="i-code">0xa120</span></div>
+        <div title="Code: 0xa121" class="the-icons span3"><i class="demo-icon icon-zocial-reddit">&#xa121;</i> <span class="i-name">icon-zocial-reddit</span><span class="i-code">0xa121</span></div>
+        <div title="Code: 0xa122" class="the-icons span3"><i class="demo-icon icon-zocial-spotify">&#xa122;</i> <span class="i-name">icon-zocial-spotify</span><span class="i-code">0xa122</span></div>
+        <div title="Code: 0xa123" class="the-icons span3"><i class="demo-icon icon-zocial-digg">&#xa123;</i> <span class="i-name">icon-zocial-digg</span><span class="i-code">0xa123</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa124" class="the-icons span3"><i class="demo-icon icon-zocial-forrst">&#xa124;</i> <span class="i-name">icon-zocial-forrst</span><span class="i-code">0xa124</span></div>
+        <div title="Code: 0xa125" class="the-icons span3"><i class="demo-icon icon-zocial-ninetyninedesigns">&#xa125;</i> <span class="i-name">icon-zocial-ninetyninedesigns</span><span class="i-code">0xa125</span></div>
+        <div title="Code: 0xa126" class="the-icons span3"><i class="demo-icon icon-zocial-grooveshark">&#xa126;</i> <span class="i-name">icon-zocial-grooveshark</span><span class="i-code">0xa126</span></div>
+        <div title="Code: 0xa127" class="the-icons span3"><i class="demo-icon icon-zocial-call">&#xa127;</i> <span class="i-name">icon-zocial-call</span><span class="i-code">0xa127</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa128" class="the-icons span3"><i class="demo-icon icon-zocial-linkedin">&#xa128;</i> <span class="i-name">icon-zocial-linkedin</span><span class="i-code">0xa128</span></div>
+        <div title="Code: 0xa129" class="the-icons span3"><i class="demo-icon icon-zocial-meetup">&#xa129;</i> <span class="i-name">icon-zocial-meetup</span><span class="i-code">0xa129</span></div>
+        <div title="Code: 0xa12a" class="the-icons span3"><i class="demo-icon icon-zocial-vk">&#xa12a;</i> <span class="i-name">icon-zocial-vk</span><span class="i-code">0xa12a</span></div>
+        <div title="Code: 0xa12b" class="the-icons span3"><i class="demo-icon icon-zocial-plancast">&#xa12b;</i> <span class="i-name">icon-zocial-plancast</span><span class="i-code">0xa12b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa12c" class="the-icons span3"><i class="demo-icon icon-zocial-disqus">&#xa12c;</i> <span class="i-name">icon-zocial-disqus</span><span class="i-code">0xa12c</span></div>
+        <div title="Code: 0xa12d" class="the-icons span3"><i class="demo-icon icon-zocial-rss">&#xa12d;</i> <span class="i-name">icon-zocial-rss</span><span class="i-code">0xa12d</span></div>
+        <div title="Code: 0xa12e" class="the-icons span3"><i class="demo-icon icon-zocial-skype">&#xa12e;</i> <span class="i-name">icon-zocial-skype</span><span class="i-code">0xa12e</span></div>
+        <div title="Code: 0xa12f" class="the-icons span3"><i class="demo-icon icon-zocial-twitter">&#xa12f;</i> <span class="i-name">icon-zocial-twitter</span><span class="i-code">0xa12f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa130" class="the-icons span3"><i class="demo-icon icon-zocial-youtube">&#xa130;</i> <span class="i-name">icon-zocial-youtube</span><span class="i-code">0xa130</span></div>
+        <div title="Code: 0xa131" class="the-icons span3"><i class="demo-icon icon-zocial-vimeo">&#xa131;</i> <span class="i-name">icon-zocial-vimeo</span><span class="i-code">0xa131</span></div>
+        <div title="Code: 0xa132" class="the-icons span3"><i class="demo-icon icon-zocial-windows">&#xa132;</i> <span class="i-name">icon-zocial-windows</span><span class="i-code">0xa132</span></div>
+        <div title="Code: 0xa133" class="the-icons span3"><i class="demo-icon icon-zocial-xing">&#xa133;</i> <span class="i-name">icon-zocial-xing</span><span class="i-code">0xa133</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa134" class="the-icons span3"><i class="demo-icon icon-zocial-yahoo">&#xa134;</i> <span class="i-name">icon-zocial-yahoo</span><span class="i-code">0xa134</span></div>
+        <div title="Code: 0xa135" class="the-icons span3"><i class="demo-icon icon-zocial-chrome">&#xa135;</i> <span class="i-name">icon-zocial-chrome</span><span class="i-code">0xa135</span></div>
+        <div title="Code: 0xa136" class="the-icons span3"><i class="demo-icon icon-zocial-email">&#xa136;</i> <span class="i-name">icon-zocial-email</span><span class="i-code">0xa136</span></div>
+        <div title="Code: 0xa137" class="the-icons span3"><i class="demo-icon icon-zocial-macstore">&#xa137;</i> <span class="i-name">icon-zocial-macstore</span><span class="i-code">0xa137</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa138" class="the-icons span3"><i class="demo-icon icon-zocial-myspace">&#xa138;</i> <span class="i-name">icon-zocial-myspace</span><span class="i-code">0xa138</span></div>
+        <div title="Code: 0xa139" class="the-icons span3"><i class="demo-icon icon-zocial-podcast">&#xa139;</i> <span class="i-name">icon-zocial-podcast</span><span class="i-code">0xa139</span></div>
+        <div title="Code: 0xa13a" class="the-icons span3"><i class="demo-icon icon-zocial-amazon">&#xa13a;</i> <span class="i-name">icon-zocial-amazon</span><span class="i-code">0xa13a</span></div>
+        <div title="Code: 0xa13b" class="the-icons span3"><i class="demo-icon icon-zocial-steam">&#xa13b;</i> <span class="i-name">icon-zocial-steam</span><span class="i-code">0xa13b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa13c" class="the-icons span3"><i class="demo-icon icon-zocial-yelp">&#xa13c;</i> <span class="i-name">icon-zocial-yelp</span><span class="i-code">0xa13c</span></div>
+        <div title="Code: 0xa13d" class="the-icons span3"><i class="demo-icon icon-zocial-wordpress">&#xa13d;</i> <span class="i-name">icon-zocial-wordpress</span><span class="i-code">0xa13d</span></div>
+        <div title="Code: 0xa13e" class="the-icons span3"><i class="demo-icon icon-zocial-eventasaurus">&#xa13e;</i> <span class="i-name">icon-zocial-eventasaurus</span><span class="i-code">0xa13e</span></div>
+        <div title="Code: 0xa13f" class="the-icons span3"><i class="demo-icon icon-zocial-tumblr">&#xa13f;</i> <span class="i-name">icon-zocial-tumblr</span><span class="i-code">0xa13f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa140" class="the-icons span3"><i class="demo-icon icon-zocial-soundcloud">&#xa140;</i> <span class="i-name">icon-zocial-soundcloud</span><span class="i-code">0xa140</span></div>
+        <div title="Code: 0xa141" class="the-icons span3"><i class="demo-icon icon-zocial-quora">&#xa141;</i> <span class="i-name">icon-zocial-quora</span><span class="i-code">0xa141</span></div>
+        <div title="Code: 0xa142" class="the-icons span3"><i class="demo-icon icon-zocial-openid">&#xa142;</i> <span class="i-name">icon-zocial-openid</span><span class="i-code">0xa142</span></div>
+        <div title="Code: 0xa143" class="the-icons span3"><i class="demo-icon icon-zocial-pinboard">&#xa143;</i> <span class="i-name">icon-zocial-pinboard</span><span class="i-code">0xa143</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa144" class="the-icons span3"><i class="demo-icon icon-zocial-gmail">&#xa144;</i> <span class="i-name">icon-zocial-gmail</span><span class="i-code">0xa144</span></div>
+        <div title="Code: 0xa145" class="the-icons span3"><i class="demo-icon icon-zocial-lastfm">&#xa145;</i> <span class="i-name">icon-zocial-lastfm</span><span class="i-code">0xa145</span></div>
+        <div title="Code: 0xa146" class="the-icons span3"><i class="demo-icon icon-zocial-songkick">&#xa146;</i> <span class="i-name">icon-zocial-songkick</span><span class="i-code">0xa146</span></div>
+        <div title="Code: 0xa147" class="the-icons span3"><i class="demo-icon icon-zocial-plurk">&#xa147;</i> <span class="i-name">icon-zocial-plurk</span><span class="i-code">0xa147</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa148" class="the-icons span3"><i class="demo-icon icon-zocial-itunes">&#xa148;</i> <span class="i-name">icon-zocial-itunes</span><span class="i-code">0xa148</span></div>
+        <div title="Code: 0xa149" class="the-icons span3"><i class="demo-icon icon-zocial-googleplay">&#xa149;</i> <span class="i-name">icon-zocial-googleplay</span><span class="i-code">0xa149</span></div>
+        <div title="Code: 0xa14a" class="the-icons span3"><i class="demo-icon icon-zocial-github-circled">&#xa14a;</i> <span class="i-name">icon-zocial-github-circled</span><span class="i-code">0xa14a</span></div>
+        <div title="Code: 0xa14b" class="the-icons span3"><i class="demo-icon icon-zocial-github">&#xa14b;</i> <span class="i-name">icon-zocial-github</span><span class="i-code">0xa14b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa14c" class="the-icons span3"><i class="demo-icon icon-zocial-facebook">&#xa14c;</i> <span class="i-name">icon-zocial-facebook</span><span class="i-code">0xa14c</span></div>
+        <div title="Code: 0xa14d" class="the-icons span3"><i class="demo-icon icon-zocial-ebay">&#xa14d;</i> <span class="i-name">icon-zocial-ebay</span><span class="i-code">0xa14d</span></div>
+        <div title="Code: 0xa14e" class="the-icons span3"><i class="demo-icon icon-zocial-dropbox">&#xa14e;</i> <span class="i-name">icon-zocial-dropbox</span><span class="i-code">0xa14e</span></div>
+        <div title="Code: 0xa14f" class="the-icons span3"><i class="demo-icon icon-zocial-cloudapp">&#xa14f;</i> <span class="i-name">icon-zocial-cloudapp</span><span class="i-code">0xa14f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa150" class="the-icons span3"><i class="demo-icon icon-zocial-intensedebate">&#xa150;</i> <span class="i-name">icon-zocial-intensedebate</span><span class="i-code">0xa150</span></div>
+        <div title="Code: 0xa151" class="the-icons span3"><i class="demo-icon icon-zocial-eventbrite">&#xa151;</i> <span class="i-name">icon-zocial-eventbrite</span><span class="i-code">0xa151</span></div>
+        <div title="Code: 0xa152" class="the-icons span3"><i class="demo-icon icon-zocial-scribd">&#xa152;</i> <span class="i-name">icon-zocial-scribd</span><span class="i-code">0xa152</span></div>
+        <div title="Code: 0xa153" class="the-icons span3"><i class="demo-icon icon-zocial-posterous">&#xa153;</i> <span class="i-name">icon-zocial-posterous</span><span class="i-code">0xa153</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa154" class="the-icons span3"><i class="demo-icon icon-zocial-stripe">&#xa154;</i> <span class="i-name">icon-zocial-stripe</span><span class="i-code">0xa154</span></div>
+        <div title="Code: 0xa155" class="the-icons span3"><i class="demo-icon icon-zocial-opentable">&#xa155;</i> <span class="i-name">icon-zocial-opentable</span><span class="i-code">0xa155</span></div>
+        <div title="Code: 0xa156" class="the-icons span3"><i class="demo-icon icon-zocial-cart">&#xa156;</i> <span class="i-name">icon-zocial-cart</span><span class="i-code">0xa156</span></div>
+        <div title="Code: 0xa157" class="the-icons span3"><i class="demo-icon icon-zocial-print">&#xa157;</i> <span class="i-name">icon-zocial-print</span><span class="i-code">0xa157</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa158" class="the-icons span3"><i class="demo-icon icon-zocial-angellist">&#xa158;</i> <span class="i-name">icon-zocial-angellist</span><span class="i-code">0xa158</span></div>
+        <div title="Code: 0xa159" class="the-icons span3"><i class="demo-icon icon-zocial-instagram">&#xa159;</i> <span class="i-name">icon-zocial-instagram</span><span class="i-code">0xa159</span></div>
+        <div title="Code: 0xa15a" class="the-icons span3"><i class="demo-icon icon-zocial-dwolla">&#xa15a;</i> <span class="i-name">icon-zocial-dwolla</span><span class="i-code">0xa15a</span></div>
+        <div title="Code: 0xa15b" class="the-icons span3"><i class="demo-icon icon-zocial-appnet">&#xa15b;</i> <span class="i-name">icon-zocial-appnet</span><span class="i-code">0xa15b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa15c" class="the-icons span3"><i class="demo-icon icon-zocial-statusnet">&#xa15c;</i> <span class="i-name">icon-zocial-statusnet</span><span class="i-code">0xa15c</span></div>
+        <div title="Code: 0xa15d" class="the-icons span3"><i class="demo-icon icon-zocial-acrobat">&#xa15d;</i> <span class="i-name">icon-zocial-acrobat</span><span class="i-code">0xa15d</span></div>
+        <div title="Code: 0xa15e" class="the-icons span3"><i class="demo-icon icon-zocial-drupal">&#xa15e;</i> <span class="i-name">icon-zocial-drupal</span><span class="i-code">0xa15e</span></div>
+        <div title="Code: 0xa15f" class="the-icons span3"><i class="demo-icon icon-zocial-buffer">&#xa15f;</i> <span class="i-name">icon-zocial-buffer</span><span class="i-code">0xa15f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa160" class="the-icons span3"><i class="demo-icon icon-zocial-pocket">&#xa160;</i> <span class="i-name">icon-zocial-pocket</span><span class="i-code">0xa160</span></div>
+        <div title="Code: 0xa161" class="the-icons span3"><i class="demo-icon icon-zocial-bitbucket">&#xa161;</i> <span class="i-name">icon-zocial-bitbucket</span><span class="i-code">0xa161</span></div>
+        <div title="Code: 0xa162" class="the-icons span3"><i class="demo-icon icon-zocial-lego">&#xa162;</i> <span class="i-name">icon-zocial-lego</span><span class="i-code">0xa162</span></div>
+        <div title="Code: 0xa163" class="the-icons span3"><i class="demo-icon icon-zocial-login">&#xa163;</i> <span class="i-name">icon-zocial-login</span><span class="i-code">0xa163</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xa164" class="the-icons span3"><i class="demo-icon icon-zocial-stackoverflow">&#xa164;</i> <span class="i-name">icon-zocial-stackoverflow</span><span class="i-code">0xa164</span></div>
+        <div title="Code: 0xa165" class="the-icons span3"><i class="demo-icon icon-zocial-hackernews">&#xa165;</i> <span class="i-name">icon-zocial-hackernews</span><span class="i-code">0xa165</span></div>
+        <div title="Code: 0xa166" class="the-icons span3"><i class="demo-icon icon-zocial-lkdto">&#xa166;</i> <span class="i-name">icon-zocial-lkdto</span><span class="i-code">0xa166</span></div>
+      </div>
+    </div>
+    <div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div>
+  </body>
+</html>

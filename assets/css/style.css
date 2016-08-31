@@ -1,0 +1,12 @@
+
+html,body,div,h1,h2,h3,h4,h5,h6,p,span,blockquote,pre,a,code,em,font,img,small,strike,strong,sub,sup,b,u,i,center,ol,ul,li,fieldset,form,label,legend{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ol,ul{list-style:none}
+.clrs {
+	clear:both
+}
+body {
+	font:12px/18px Helvetica, Arial, Geneva, sans-serif;
+	color:#555;
+	background:#e2dada;
+	/*width: 100%;*/
+	text-align: center
+}

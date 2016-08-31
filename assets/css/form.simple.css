@@ -1,0 +1,61 @@
+#simplex-form {
+	background: #fff;
+	color: #666;
+}
+#simplex-form h2 {
+	color: #666;
+}
+#simplex-form h2 span{
+	color: #999;
+}
+form#simplexform label {
+	color:#666;
+}
+form#simplexform input.text, form#simplexform textarea.text, form#simplexform select.text {
+	border: 1px solid #e5e9e9;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+}
+form#simplexform input.focus, form#simplexform textarea.focus, form#simplexform select.focus {
+	background: #eaebed;
+}
+select.focus, select.optcolors {
+	 color: #000;
+}
+form#simplexform .addfile {
+	background: #63c6e4;
+	border: none;
+}
+form#simplexform .addfile:hover {
+	background: #66BCD6;
+}
+form#simplexform div.submitbtn {
+	background: none;
+	padding: 0 25px 25px;
+}
+form#simplexform #submit {
+	background:#609fc9;
+	color: #fff;
+	border-bottom: 2px solid #5287aa;
+}
+form#simplexform span.error-default {
+	background: #af0909;
+	color: #fff;
+}
+form#simplexform span.error-default:before {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;	
+	border-top: 7px solid #af0909;
+}
+form#simplexform span.error-slick {
+	background: url(../images/error-icons.png) top left no-repeat;
+}
+h3 span.success {
+	background:url(../images/success-icons.png) top center no-repeat;
+}
+div#result .message {
+	background: #46A376;
+	color: #fff;
+	border-bottom: 2px solid #41966D;
+}

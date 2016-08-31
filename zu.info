@@ -1,0 +1,73 @@
+name = 'ZU'
+description = 'ZU 12 Template'
+package = 'Core'
+version = 'VERSION'
+core = '7.x'
+screenshot = 'screenshot.png'
+
+;add css
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/animate.min.css
+stylesheets[all][] = css/jquery.mmenu.all.css
+stylesheets[all][] = fancybox/source/jquery.fancybox.css
+stylesheets[all][] = fancybox/source/helpers/jquery.fancybox-buttons.css
+stylesheets[all][] = fancybox/source/helpers/jquery.fancybox-thumbs.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/jquery-ui.css
+stylesheets[all][] = assets/css/simplex.css
+stylesheets[all][] = assets/css/form.elegant.css
+stylesheets[all][] = fonts/brandico/css/fontello.css
+stylesheets[all][] = fonts/elusive/css/fontello.css
+stylesheets[all][] = fonts/entypo/css/fontello.css
+stylesheets[all][] = fonts/fontelico/css/fontello.css
+stylesheets[all][] = fonts/iconic/css/fontello.css
+stylesheets[all][] = fonts/linecons/css/fontello.css
+stylesheets[all][] = fonts/maki/css/fontello.css
+stylesheets[all][] = fonts/meteocons/css/fontello.css
+stylesheets[all][] = fonts/mfg-labs/css/fontello.css
+stylesheets[all][] = fonts/modern-pictograms/css/fontello.css
+stylesheets[all][] = fonts/typicons/css/fontello.css
+stylesheets[all][] = fonts/web-simbols/css/fontello.css
+stylesheets[all][] = fonts/zocial/css/fontello.css
+stylesheets[all][] = css/helpers.css
+stylesheets[all][] = css/update.css
+
+;add js
+scripts[] = js/jquery-1.11.2.min.js
+scripts[] = js/jquery-ui.min.js
+scripts[] = js/modernizr-2.6.2-respond-1.1.0.min.js
+scripts[] = js/less.min.js
+
+scripts[] = fancybox/lib/jquery.mousewheel-3.0.6.pack.js
+scripts[] = fancybox/source/jquery.fancybox.pack.js
+scripts[] = fancybox/source/helpers/jquery.fancybox-buttons.js
+scripts[] = fancybox/source/helpers/jquery.fancybox-media.js
+scripts[] = fancybox/source/helpers/jquery.fancybox-thumbs.js
+scripts[] = js/bootstrap.min.js
+scripts[] = js/imagesloaded.pkgd.min.js
+scripts[] = js/masonry.pkgd.min.js
+scripts[] = js/jquery.easing.1.3.js
+scripts[] = js/jquery.nv.js
+scripts[] = js/jquery.mmenu.min.all.js
+scripts[] = js/scrollfix.js
+scripts[] = js/tipso.min.js
+scripts[] = js/tweetie.min.js
+scripts[] = js/mapster.js
+scripts[] = js/map-options.js
+scripts[] = js/main.js
+scripts[] = js/update.js
+
+;Core regions
+
+regions[search] = 'Search header 3'
+regions[main_menu] = 'Main menu'
+regions[slider] = 'Slider'
+regions[content] = 'Main content'
+regions[sidebar_first] = 'Sidebar left'
+regions[sidebar_second] = 'Sidebar right'
+regions[section] = 'Section content'
+regions[footer] = 'Footer'
+regions[footer_menu] = 'Footer menu'
+regions[bottom_page] = 'Bottom page 404'
+regions[page_title_right] = 'Page title right'
+regions[bottom_product] = 'Bottom product'
