@@ -117,14 +117,19 @@ function zu_menu_tree__main_menu(array $variables) {
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
 
-function zu_menu_tree__menu_school(array $variables) {
-  $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
+function zu_menu_tree__user_menu(array $variables) {
+  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
 
+function zu_menu_tree__menu_school(array $variables) {
+  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
+  return '<ul class="main-nav nav-school">' . $variables['tree'] . '</ul>';
+}
+
 function zu_menu_tree__menu_students(array $variables) {
-  $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
-  return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
+  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
+  return '<ul class="main-nav nav-students">' . $variables['tree'] . '</ul>';
 }
 
 function zu_menu_tree__menu_footer_menu($variables) {

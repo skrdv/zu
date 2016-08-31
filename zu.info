@@ -61,6 +61,7 @@ scripts[] = js/update.js
 ;; Core regions
 regions[toolbar] = 'Header toolbar'
 regions[main_menu] = 'Main menu'
+regions[user_menu] = 'User menu'
 regions[menu_school] = 'Menu School'
 regions[menu_students] = 'Menu Students'
 regions[slider] = 'Slider'

@@ -3,16 +3,15 @@
 $out = '';
 
 if (!empty($block->block_id)) {
-
 	$id = 'id="'.$block->block_id.'"';
-
 } else {
-
 	$id = '';
-
 }
 
-if($block->region == 'main_menu' || $block->region == 'menu_school' || $block->region == 'menu_students'){
+if($block->region == 'main_menu' ||
+	 $block->region == 'menu_school' ||
+	 $block->region == 'menu_students' ||
+	 $block->region == 'user_menu'){
 
 	$out .= '<nav role="navigation" class="'.$classes.'" '.$attributes.'>';
 	$out .= render($title_suffix);
