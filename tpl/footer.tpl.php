@@ -1,4 +1,4 @@
-<?php $footer_copyright_message = theme_get_setting('footer_copyright_message', 'manis'); ?>
+<?php $footer_copyright_message = theme_get_setting('footer_copyright_message', 'zu'); ?>
 <footer role="contentinfo" class="site-footer">
     <div class="container">
         <div class="row">

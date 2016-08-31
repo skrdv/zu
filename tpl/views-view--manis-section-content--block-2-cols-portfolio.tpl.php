@@ -17,7 +17,7 @@
 			</div>
 			<div class="clearfix"></div>
 			<?php if($pager): ?>
-			<div class="manis-portfolio">
+			<div class="zu-portfolio">
 				<?php print $pager; ?>
 			</div>
 			<?php endif ?>

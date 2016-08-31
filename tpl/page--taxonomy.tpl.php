@@ -1,4 +1,4 @@
-<?php require_once(drupal_get_path('theme','manis').'/tpl/header.tpl.php'); ?>
+<?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); ?>
 <?php if($breadcrumb): ?>
 <!-- Page title start //-->
 <section class="page-title-bar bg-img-2" data-background="parallax" data-transparent="secondary">
@@ -45,4 +45,4 @@
 	</div>
 </div>
 <?php }?>
-<?php require_once(drupal_get_path('theme','manis').'/tpl/footer.tpl.php'); ?>
+<?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php'); ?>

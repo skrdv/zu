@@ -59,4 +59,4 @@
 <?php if($page['section']): ?>
 	<?php print render($page['section']); ?>
 <?php endif; ?>
-<?php require_once(drupal_get_path('theme','manis').'/tpl/footer.tpl.php'); ?>
+<?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php'); ?>

@@ -1,4 +1,4 @@
-<?php require_once(drupal_get_path('theme','manis').'/tpl/header.tpl.php'); ?>
+<?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); ?>
 <?php if($page['slider']): ?>
 	<?php print render($page['slider']); ?>
 <?php endif; ?>
@@ -13,4 +13,4 @@
 	<?php print render($page['content']); ?>
 <?php endif; ?>
 <?php print render($page['section']); ?>
-<?php require_once(drupal_get_path('theme','manis').'/tpl/footer.tpl.php'); ?>
+<?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php'); ?>

@@ -5,7 +5,7 @@
 	if(isset($_GET['listing'])){
 		$blogs_list = $_GET['listing'];
 	}else{
-		$blogs_list = theme_get_setting('blogs_list', 'manis');
+		$blogs_list = theme_get_setting('blogs_list', 'zu');
 		if(empty($blogs_list)){
 			$blogs_list = 'style1';
 		}

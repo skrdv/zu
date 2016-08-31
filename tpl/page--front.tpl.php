@@ -1,4 +1,4 @@
-<?php require_once(drupal_get_path('theme','manis').'/tpl/header.tpl.php'); 
+<?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); 
 
  if($page['slider']): ?>
 
@@ -38,4 +38,4 @@
 
  
 
-<?php require_once(drupal_get_path('theme','manis').'/tpl/footer.tpl.php');
+<?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php');

@@ -15,7 +15,9 @@ $css_skin = array(
   ),
   '#weight' => 2,
 );
+
 drupal_add_html_head($css_skin, 'skin');
+
 function zu_preprocess_html(&$variables) {
   //-- Google web fonts -->
   drupal_add_css('http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic,300,300italic', array('type' => 'external'));
@@ -50,9 +52,11 @@ function zu_preprocess_page(&$vars) {
     drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' .base_path().path_to_theme() . '" });', 'inline');
 
 }
+
 function zu_preprocess_node(&$vars) {
   unset($vars['content']['links']['statistics']['#links']['statistics_counter']['title']);
 }
+
 function zu_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
@@ -74,6 +78,7 @@ function zu_form_alter(&$form, &$form_state, $form_id) {
   }
 
 }
+
 function zu_breadcrumb($variables) {
   $crumbs ='';
   $breadcrumb = $variables['breadcrumb'];
@@ -89,6 +94,7 @@ function zu_breadcrumb($variables) {
     return NULL;
   }
 }
+
 function zu_preprocess_file_entity(&$variables) {
   if ($variables['type'] == 'image') {
 
@@ -103,9 +109,17 @@ function zu_preprocess_file_entity(&$variables) {
     }
   }
 }
-function zu_menu_tree__main_menu(array $variables) {
+
+function zu_menu_tree($variables) {
+    return '<ul id="my_id" class="my_new_class">' . $variables['tree'] . '</ul>';
+  }
+
+
+
+function zu_menu_tree__main_menu($variables) {
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
+
 function zu_menu_tree__menu_footer_menu($variables) {
   $str  = '';
   $str .= '<ul class="footer-menu">';
@@ -113,6 +127,7 @@ function zu_menu_tree__menu_footer_menu($variables) {
   $str .= '</ul>';
   return $str;
 }
+
 function zu_menu_tree__menu_menu_404_page($variables) {
   $str  = '';
   $str .= '<div class="col-lg-12"><ul class="page-404-menu">';

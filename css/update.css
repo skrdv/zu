@@ -550,7 +550,7 @@
 
 
 
-.widget.widget-tabs #quicktabs-manis_block_tab_blog_post .item-list ul > li {
+.widget.widget-tabs #quicktabs-zu_block_tab_blog_post .item-list ul > li {
 
     color: black;
 
@@ -560,7 +560,7 @@
 
 
 
-.widget.widget-tabs #quicktabs-manis_block_tab_blog_post .item-list ul li.active a {
+.widget.widget-tabs #quicktabs-zu_block_tab_blog_post .item-list ul li.active a {
 
     color: #37c879;
 
@@ -570,7 +570,7 @@
 
 
 
-.widget.widget-tabs #quicktabs-manis_block_tab_blog_post .item-list ul li {
+.widget.widget-tabs #quicktabs-zu_block_tab_blog_post .item-list ul li {
 
     position: inherit;
 
@@ -582,7 +582,7 @@
 
 
 
-.widget.widget-tabs #quicktabs-manis_block_tab_blog_post .item-list ul li:first-child {
+.widget.widget-tabs #quicktabs-zu_block_tab_blog_post .item-list ul li:first-child {
 
     margin: 0px;
 
@@ -930,7 +930,7 @@ form.search-form {
 
 
 
-#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit] {
+#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit] {
 
     margin-top: 0;
 
@@ -964,7 +964,7 @@ form.search-form {
 
 
 
-#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]:hover {
+#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]:hover {
 
     background-color: #2fac68;
 
@@ -972,7 +972,7 @@ form.search-form {
 
 
 
-form#views-exposed-form--manis-block-online-shop-page-shop-catalog {
+form#views-exposed-form--zu-block-online-shop-page-shop-catalog {
 
     margin-top: 15px;
 
@@ -980,7 +980,7 @@ form#views-exposed-form--manis-block-online-shop-page-shop-catalog {
 
 
 
-#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form .views-widget-sort-by .form-type-select select, #views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form .views-widget-sort-order .form-item-sort-order select {
+#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form .views-widget-sort-by .form-type-select select, #views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form .views-widget-sort-order .form-item-sort-order select {
 
     width: 250px;
 
@@ -992,7 +992,7 @@ form#views-exposed-form--manis-block-online-shop-page-shop-catalog {
 
 
 
-#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form .views-exposed-widget .form-item label {
+#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form .views-exposed-widget .form-item label {
 
     text-transform: uppercase;
 
@@ -1754,7 +1754,7 @@ table.checkout-review tr.pane-title {
 
 
 
-.manis-contact-form {
+.zu-contact-form {
 
     margin-top: 31.5px;
 

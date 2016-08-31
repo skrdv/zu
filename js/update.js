@@ -272,7 +272,7 @@ var path = Drupal.settings.pathToTheme;
         var marker = map.addMarker({
             lat: 37.791350,
             lng: -122.435883,
-            content: 'Manis Office',
+            content: 'zu Office',
             icon: path+'/img/office-building.png'
         });
     }
@@ -541,7 +541,7 @@ $(document).ready(function() {
         });
     }
     $('.region-section').find('.cta1').attr('data-style', 'dark');
-    $('.region-section').find('.manis-light').attr('data-style', 'light');
+    $('.region-section').find('.zu-light').attr('data-style', 'light');
     $('#simplenews-block-form-7').attr('class', 'simplenews-subscribe col-lg-8 col-md-8');
     $('#simplenews-block-form-7 div').find('.form-submit').attr('value', 'Subscribe me');
     //$('#simplenews-block-form-7 div').find('.form-submit').attr('class','m-btn[data-color="primary"]');
@@ -566,12 +566,12 @@ $(document).ready(function() {
     $('.shop-listing  div.col-lg-4').slice(6,9).wrapAll( "<div class='row'></div>" );
     $('.blog-list article.post').last().after('<div class="clearfix"></div>');
 
-    $("#manis-skin a").click(function(){
+    $("#zu-skin a").click(function(){
         var data_skin = $(this).attr('data-skin');
-        $('#manis-site-color').attr('href',path+'/css/skins/'+data_skin+'.css');
+        $('#zu-site-color').attr('href',path+'/css/skins/'+data_skin+'.css');
     });
-    $('#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]').attr('class','m-btn');
-    $('#views-exposed-form--manis-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]').attr('data-color','primary');
+    $('#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]').attr('class','m-btn');
+    $('#views-exposed-form--zu-block-online-shop-page-shop-catalog .views-exposed-form div.views-submit-button input[type=submit]').attr('data-color','primary');
     $('.ajax-shopping-cart-table tbody tr td.price').addClass('color-primary');
     $('.field-type-commerce-product-reference .field-items form input[type=submit]').addClass('m-btn');
     $('.field-type-commerce-product-reference .field-items form input[type=submit]').attr('data-color','primary');
