@@ -3,6 +3,7 @@
 // Colors
 
 @color-white: rgb(255,255,255);
+@color-black: rgb(17, 17, 17);
 @color-green: rgb(55,200,121);
 
 @color-school-1: rgb(242,65,183);
@@ -62,6 +63,35 @@ header.site-header {
 	}
 }
 
+#page {
+	.page-title-bar {
+		padding: 8px 0 9px 0;
+		.transparent-bg {
+	 		background-color: rgba(17, 17, 17, 0.4);
+		}
+		.breadcrumbs,
+		.breadcrumbs a {
+    	color: @color-black !important;
+		}
+	}
+
+	.tabs.primary {
+		text-align: right;
+	}
+
+}
+
+.page-school-news .bg-img-line,
+.node-type-news-school .bg-img-line {
+	background: url(../img/bgs/line_school.png) center center repeat;
+	background-size: 200%;
+}
+
+.page-students-news .bg-img-line,
+.node-type-news-students .bg-img-line {
+	background: url(../img/bgs/line_students.png) center center repeat;
+	background-size: 200%;
+}
 
 	// .move-to-the-top {
 	// 	border: 2px solid @color-green;
@@ -304,7 +334,6 @@ header.site-header {
 @media only screen and (max-width: 767px) {
 
 	#header {
-		background: red;
 		.header-left {
 			.site-logo {
 				text-align: center;
@@ -314,11 +343,8 @@ header.site-header {
 				padding: 0;
 				text-align: center;
 				.header-contacts {
-				padding: 0;
-				width: 40% !important;
-				}
-				.header-soc-btns {
-					// float: right;
+					padding: 0;
+					width: 40% !important;
 				}
 			}
 			.mobile-menu-btn {
@@ -326,30 +352,30 @@ header.site-header {
 				right: 30px;
 				top: -70px;
 			}
-		} //end
+		} //end left
 		.header-right {
-			padding-bottom: 15px
+			padding-bottom: 15px;
 			text-align: center;
-			.founders {
-				margin: 15px 0;
-			}
-			.btn-work-school {
+			.btn-work-school,
+			.btn-work-students,
+			 .btn-casting-school,
+			 .btn-casting-students {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-content: center;
 				align-items: center;
 			}
-			.btn-work-students {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-content: center;
-				align-items: center;
-			}
+
 		}
 	}
 
+	#nav {
+		.main-nav.nav-school,
+		.main-nav.nav-students {
+			display: none;
+		}
+	}
 
 }
 
@@ -370,6 +396,12 @@ header.site-header {
 			}
 		}
 	}
+	#nav {
+		.main-nav.nav-school,
+		.main-nav.nav-students {
+			display: none;
+		}
+	}
 
 }
 
@@ -385,6 +417,7 @@ header.site-header {
 			margin-right: 5px;
 		}
 	}
+
 
 }
 

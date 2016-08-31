@@ -1,9 +1,7 @@
 <?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); ?>
 
-<div class="container">
-
 <?php if($breadcrumb): ?>
-<section class="page-title-bar bg-img-2" data-background="parallax" data-transparent="secondary">
+<section class="page-title-bar bg-img-line" data-background="parallax" data-transparent="secondary">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -21,6 +19,8 @@
 	</div>
 </section>
 <?php endif; ?>
+
+<div class="container">
 
 <?php if($page['slider']): ?>
 	<?php //print render($page['slider']); ?>

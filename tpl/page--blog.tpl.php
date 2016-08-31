@@ -20,19 +20,20 @@
 </section>
 <!-- Page title end //-->
 <?php endif; ?>
+
 <?php  if($page['content']){?>
 <div class="container">
     <div class="row">
     	<div class="col-lg-9 col-md-8">
     	<?php if(arg(0)!='node'){ ?>
-    		<section class="blog-list">	
+    		<section class="blog-list">
     	<?php } ?>
 			<?php
 				if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
 					print render($tabs);
 				endif;
 				print $messages;
-			?>				
+			?>
 			<?php print render($page['content']); ?>
 			<div class="clearfix"></div>
 			</section>
