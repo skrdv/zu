@@ -1,6 +1,8 @@
 <?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); ?>
+
+<div class="container">
+
 <?php if($breadcrumb): ?>
-<!-- Page title start //-->
 <section class="page-title-bar bg-img-2" data-background="parallax" data-transparent="secondary">
 	<div class="container">
 		<div class="row">
@@ -18,8 +20,8 @@
 		</div>
 	</div>
 </section>
-<!-- Page title end //-->
 <?php endif; ?>
+
 <?php if($page['slider']): ?>
 	<?php //print render($page['slider']); ?>
 <?php endif; ?>
@@ -34,7 +36,7 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4">
-					<?php if($page['sidebar_first']): ?>						
+					<?php if($page['sidebar_first']): ?>
 						<?php print render($page['sidebar_first']); ?>
 					<?php endif; ?>
 				</div>
@@ -45,7 +47,7 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 							print render($tabs);
 						endif;
 						print $messages;
-					?>		
+					?>
 					<?php print render($page['content']); ?>
 				<?php endif; ?>
 				</div>
@@ -68,7 +70,7 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
 							print render($tabs);
 						endif;
-						print $messages;								
+						print $messages;
 					?>
 					<?php print render($page['content']); ?>
 					</section>
@@ -87,7 +89,7 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
 							print render($tabs);
 						endif;
-						print $messages;						
+						print $messages;
 					?>
 					<?php print render($page['content']); ?>
 				<?php endif; ?>
@@ -103,14 +105,14 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 <?php }elseif($sidebar == '4'){//right sidebar style 2 ?>
 	<section class="padding-top-1">
 		<div class="container">
-			<div class="row">			
+			<div class="row">
 				<div class="col-lg-9 col-md-8">
 				<?php  if($page['content']):?>
 					<?php
 						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
 							print render($tabs);
 						endif;
-						print $messages;							
+						print $messages;
 					?>
 					<?php print render($page['content']); ?>
 				<?php endif; ?>
@@ -140,10 +142,12 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 				</div>
 			</div>
 		</section>
-	<?php endif; ?>	
+	<?php endif; ?>
 <?php } ?>
 <?php if($page['section']): ?>
 	<?php print render($page['section']); ?>
 <?php  endif; ?>
- 
+
+</div>
+
 <?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php'); ?>

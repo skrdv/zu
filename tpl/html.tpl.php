@@ -2,6 +2,10 @@
 <html lang="<?php print $language->language; ?>">
   <head>
     <title><?php print $head_title; ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="HandheldFriendly" content="True">
+	  <meta name="MobileOptimized" content="360">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <?php print $styles; print $head; ?>
     <?php $tracking_code = theme_get_setting('general_setting_tracking_code', 'zu'); ?>
     <?php print $tracking_code; ?>

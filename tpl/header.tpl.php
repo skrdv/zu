@@ -9,16 +9,18 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-6 header-left">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 header-left">
           <div class="row">
 
             <?php if($logo): ?>
-              <div class="col-lg-4 site-logo">
-                <a href="/" title="<?php print $site_name.' - '.$site_slogan; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name.' - '.$site_slogan; ?>"></a>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 site-logo">
+                <a href="/" title="<?php print $site_name.' - '.$site_slogan; ?>">
+                  <img src="<?php print $logo; ?>" alt="<?php print $site_name.' - '.$site_slogan; ?>">
+                </a>
               </div>
             <?php endif; ?>
 
-            <div class="col-lg-7 header-info">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 header-info">
               <ul class="header-contacts">
                 <li><i class="glyphicon glyphicon-phone"></i> <?php print $phone_contact;?></li>
                 <li><i class="glyphicon glyphicon-envelope"></i> <?php print $contact_email;?></li>
@@ -28,13 +30,14 @@
               <?php endif; ?>
               <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md">
                 <i class="glyphicon glyphicon-align-justify"></i>
+                <span>меню</span>
               </a>
             </div>
 
           </div>
         </div>
 
-        <div class="col-lg-6 header-right">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 header-right">
           <div class="row">
           <?php  if($page['toolbar']): ?>
               <?php print render($page['toolbar']); ?>

@@ -1,6 +1,6 @@
 <?php require_once(drupal_get_path('theme','zu').'/tpl/header.tpl.php'); ?>
+
 <?php if($breadcrumb): ?>
-<!-- Page title start //-->
 <section class="page-title-bar bg-img-2" data-background="parallax" data-transparent="secondary">
 	<div class="container">
 		<div class="row">
@@ -18,8 +18,8 @@
 		</div>
 	</div>
 </section>
-<!-- Page title end //-->
 <?php endif; ?>
+
 <?php if($page['content']): ?>
 <section>
     <div class="container">
@@ -32,7 +32,7 @@
 				print $messages;
 		    ?>
 			<?php print render($page['content']); ?>
-			
+
         	</div>
         	<div class="col-lg-3 col-md-4">
         		<?php if($page['sidebar_second']): ?>
@@ -43,7 +43,9 @@
     </div>
 </section>
 <?php endif; ?>
+
 <?php  if($page['section']):?>
 <?php print render($page['section']); ?>
 <?php endif; ?>
+
 <?php require_once(drupal_get_path('theme','zu').'/tpl/footer.tpl.php'); ?>

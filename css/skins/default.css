@@ -216,7 +216,7 @@
 
 
 
-  46. M Menu  / .mm-menu 
+  46. M Menu  / .mm-menu
 
 
 
@@ -2944,7 +2944,7 @@ section .section-subtitle-2 {
 
 .site-slogan {
 
-  width: auto;
+  /*width: auto;*/
 
   float: left;
 
@@ -8180,7 +8180,7 @@ header.site-header.scrolled[data-version="3"] .mobile-menu-btn.second {
 
 /*
 
-  46. M Menu  / .mm-menu 
+  46. M Menu  / .mm-menu
 
 */
 
@@ -9960,7 +9960,7 @@ footer.site-footer.site-footer-cs .header-soc-btns li a:hover {
 
 }
 
-/*  
+/*
 
   51. Media Queries
 
@@ -10725,4 +10725,3 @@ div.rivaCarouselItem.cloned {
   line-height: 40px;
 
 }
-
