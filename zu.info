@@ -59,7 +59,7 @@ scripts[] = js/main.js
 scripts[] = js/update.js
 
 ;; Core regions
-regions[search] = 'Search header 3'
+regions[toolbar] = 'Header toolbar'
 regions[main_menu] = 'Main menu'
 regions[menu_school] = 'Menu School'
 regions[menu_students] = 'Menu Students'

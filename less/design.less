@@ -3,24 +3,100 @@
 ------------------------------------------------------------------ */
 
 #site-head.site-header {
-	.site-logo {
-	    margin: 15px 0;
-	}
-	.header-info {
-		float: left;
-		margin: 30px 0 0 30px;
-		.header-contacts,
-		.header-soc-btns {
-			float: none;
-			display: block;
-			margin: 0;
+
+	.header-left {
+		position: relative;
+		.site-logo {
+		    margin: 15px 0;
 		}
-		.header-contacts {
-			margin-bottom: 15px;
-			li {
-				font-size: 1.2em;
+		.header-info {
+			float: left;
+			margin: 30px 0 0 0;
+			.header-contacts {
 				float: none;
+				display: block;
+				margin: 0 0 15px 0;
+				li {
+					font-size: 1.2em;
+					float: none;
+				}
+			}
+			.header-soc-btns {
+				float: none;
+				display: block;
+				margin: 0;
+				 li  {
+					float: none;
+					display: inline-block;
+					width: 40px;
+	    		height: 40px;
+	    		margin-right: 10px;
+					a {
+						width: 40px;
+		    		height: 40px;
+						line-height: 40px;
+					 	border-radius: 50%;
+					 	border: 2px solid #37c879;
+					 	background-color: transparent !important;
+					 	i {
+							font-size: 1.4em;
+						 	color: #37c879 !important;
+					 	}
+					 	&:hover {
+						 background-color: #37c879 !important;
+						 i {
+							 color: #fff !important;
+						 }
+					 	}
+				 	}
+				}
+			}
+		}
+		.mobile-btn {
+			width: auto;
+			float: left;
+			.mobile-menu-btn {
+				float: none;
+				display: block;
+			}
+		}
+
+	}
+
+	.header-right {
+		position: relative;
+		.icon-action {
+    	float: left;
+    	margin-top: 30px;
+    	position: relative;
+    	box-sizing: border-box;
+    	padding-left: 80px;
+			height: 60px;
+			i {
+		  	width: 60px;
+		  	height: 60px;
+		  	line-height: 60px;
+		  	position: absolute;
+		  	left: 0;
+		  	top: 0;
+		  	color: #37c879;
+		  	text-align: center;
+		  	font-size: 32px;
+		  	box-shadow: #37c879 0 0 0 2px;
+		  	transition: all ease 0.4s;
+			}
+			.title {
+		  	color: #111111;
+		  	text-transform: capitalize;
+		  	font-size: 120%;
+				margin-top: 15px;
+		  	margin-bottom: 10px;
+			}
+			&:hover i {
+			  background-color: #37c879;
+			  color: #fff;
 			}
 		}
 	}
+
 }

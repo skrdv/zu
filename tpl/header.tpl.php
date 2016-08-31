@@ -104,46 +104,51 @@
 <?php }else{ ?>
 
   <header class="site-header" data-version="3" role="banner" id="site-head">
+
     <div class="w-100 float-left border-bottom-1 to-slide">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="site-header-left">
+
+          <div class="col-lg-6 header-left">
+            <div class="row">
+
               <?php if($logo): ?>
-                <div class="site-logo">
+                <div class="col-lg-4 site-logo">
                   <a href="/" title="<?php print $site_name.' - '.$site_slogan; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name.' - '.$site_slogan; ?>"></a>
                 </div>
               <?php endif; ?>
-              <div class="header-info">
+
+              <div class="col-lg-7 header-info">
                 <ul class="header-contacts">
                   <li><i class="glyphicon glyphicon-phone"></i> <span class="hidden-xs"><?php print t('Phone');?>: </span><?php print $phone_contact;?></li>
                   <li><i class="glyphicon glyphicon-envelope"></i> <span class="hidden-xs"><?php print t('Email');?>: </span><?php print $contact_email;?></li>
                 </ul>
                 <?php if($social_network): ?>
-                  <!-- Social icons start //-->
                   <?php print $social_network; ?>
-                  <!-- Social icons end //-->
                 <?php endif; ?>
               </div>
-            </div>
-            <div class="site-header-right">
-              <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md"><i class="glyphicon glyphicon-align-justify"></i></a>
 
-              <div class="clearfix hidden-lg hidden-md"></div>
-
-              <?php /* if($page['search']): ?>
-                <!-- Header search start //-->
-                <div class="header-search" id="header-search">
-                  <?php print render($page['search']); ?>
-                </div>
-                <!-- Header search end //-->
-              <?php endif; */ ?>
+              <div class="col-lg-1 site-logo">
+                <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md">
+                  <i class="glyphicon glyphicon-align-justify"></i>
+                </a>
+              </div>
 
             </div>
           </div>
+
+          <div class="col-lg-6 header-right">
+            <div class="row">
+            <?php  if($page['toolbar']): ?>
+                <?php print render($page['toolbar']); ?>
+            <?php endif;  ?>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
