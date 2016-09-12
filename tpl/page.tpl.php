@@ -23,24 +23,31 @@
 <div class="container">
 
 <?php if($page['slider']): ?>
-	<?php //print render($page['slider']); ?>
+	<?php print render($page['slider']); ?>
 <?php endif; ?>
 
 <?php
-if (isset($node->field_sidebar['und'][0]['value'])){
-	$sidebar = $node->field_sidebar['und'][0]['value'];
+if ( isset($node->field_school_sidebar['und'][0]['value']) || isset($node->field_students_sidebar['und'][0]['value']) ){
+	if ( isset($node->field_school_sidebar['und'][0]['value']) ){
+		$sidebar = $node->field_school_sidebar['und'][0]['value'];
+	}
+	if ( isset($node->field_students_sidebar['und'][0]['value']) ){
+		$sidebar = $node->field_students_sidebar['und'][0]['value'];
+	}
 } else{ $sidebar = 'none';}
 ?>
-<?php if($sidebar == '1'){//left sidebar style 1 ?>
+
+<?php if($sidebar == '1'){ // Left sidebar ?>
+
 	<section class="padding-top-1">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-4">
+				<div class="col-lg-3 col-md-4">
 					<?php if($page['sidebar_first']): ?>
 						<?php print render($page['sidebar_first']); ?>
 					<?php endif; ?>
 				</div>
-				<div class="col-lg-8 col-md-8">
+				<div class="col-lg-9 col-md-8">
 				<?php  if($page['content']):?>
 					<?php
 						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
@@ -55,54 +62,8 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 		</div>
 	</section>
 
-<?php }elseif($sidebar == '2'){//left sidebar style 2  ?>
-	<section class="padding-top-1">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-4">
-					<?php if($page['sidebar_first']): ?>
-						<?php print render($page['sidebar_first']); ?>
-					<?php endif; ?>
-				</div>
-				<div class="col-lg-9 col-md-8">
-				<?php  if($page['content']):?>
-					<?php
-						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
-							print render($tabs);
-						endif;
-						print $messages;
-					?>
-					<?php print render($page['content']); ?>
-					</section>
-				<?php endif; ?>
-				</div>
-			</div>
-		</div>
-	</section>
-<?php }elseif($sidebar == '3'){//right sidebar style 1 ?>
-	<section class="padding-top-1">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-8">
-				<?php  if($page['content']):?>
-					<?php
-						if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
-							print render($tabs);
-						endif;
-						print $messages;
-					?>
-					<?php print render($page['content']); ?>
-				<?php endif; ?>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<?php if($page['sidebar_second']): ?>
-						<?php print render($page['sidebar_second']); ?>
-					<?php endif; ?>
-				</div>
-			</div>
-		</div>
-	</section>
-<?php }elseif($sidebar == '4'){//right sidebar style 2 ?>
+<?php }elseif($sidebar == '2'){ // Right sidebar ?>
+
 	<section class="padding-top-1">
 		<div class="container">
 			<div class="row">
@@ -125,7 +86,9 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 			</div>
 		</div>
 	</section>
+
 <?php }else{//full width ?>
+
 	<?php  if($page['content']):?>
 		<section class="padding-top-1">
 			<div class="container">
@@ -143,10 +106,12 @@ if (isset($node->field_sidebar['und'][0]['value'])){
 			</div>
 		</section>
 	<?php endif; ?>
+
 <?php } ?>
+
 <?php if($page['section']): ?>
 	<?php print render($page['section']); ?>
-<?php  endif; ?>
+<?php endif; ?>
 
 </div>
 
