@@ -1,0 +1,30 @@
+{
+  "name": "zu",
+  "description": "Gulp with Drupal",
+  "main": "gulpfile.js",
+  "authors": [
+    "skrdv <skrdvx@gmail.com> (http://skrdv.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "drupal",
+    "gulp"
+  ],
+  "homepage": "https://github.com/skrdv/zu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skrdv/zu.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1",
+    "normalize-less": "*",
+    "font-awesome": "fontawesome#^4.6.3",
+    "fancybox": "^2.1.5",
+    "bootswatch": "^3.3.7"
+  }
+}

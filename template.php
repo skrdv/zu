@@ -1,12 +1,8 @@
 <?php
+
+/*
 $zu_skin = theme_get_setting('zu_skin', 'zu');
-
-if(!empty($zu_skin)){
-  $skin_color = '/css/skins/'.$zu_skin.'.css';
-}else{
-  $skin_color = '/css/skins/default.css';
-}
-
+$skin_color = '/css/skins/default.css';
 $css_skin = array(
   '#tag' => 'link', // The #tag is the html tag - <link />
   '#attributes' => array( // Set up an array of attributes inside the tag
@@ -17,15 +13,12 @@ $css_skin = array(
   ),
   '#weight' => 2,
 );
-
 drupal_add_html_head($css_skin, 'skin');
+*/
+
 
 function zu_preprocess_html(&$variables) {
-  //-- Google web fonts -->
-  drupal_add_css('http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic,300,300italic', array('type' => 'external'));
-  drupal_add_css('http://fonts.googleapis.com/css?family=Ubuntu+Condensed', array('type' => 'external'));
-  drupal_add_css('http://fonts.googleapis.com/css?family=Euphoria+Script', array('type' => 'external'));
-  drupal_add_js('https://maps.googleapis.com/maps/api/js?sensor=true', array('type' => 'external'));
+  drupal_add_css('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic', array('type' => 'external'));
 }
 
 
