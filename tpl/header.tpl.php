@@ -1,50 +1,23 @@
-<?php $phone_contact = theme_get_setting('phone_contact', 'zu'); ?>
-<?php $contact_email = theme_get_setting('contact_email', 'zu'); ?>
-<?php $social_network = theme_get_setting('social_network', 'zu'); ?>
-<?php $header_style = theme_get_setting('header_style', 'zu'); ?>
+<header class="site-header" role="banner">
 
-<header class="site-header" data-version="3" role="banner">
-
-  <div id="header" class="w-100 to-slide">
+  <div id="header">
     <div class="container">
       <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 header-left">
-          <div class="row">
-
-            <?php if($logo): ?>
-              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 site-logo">
-                <a href="/" title="<?php print $site_name.' - '.$site_slogan; ?>">
-                  <img src="<?php print $logo; ?>" alt="<?php print $site_name.' - '.$site_slogan; ?>">
-                </a>
-              </div>
-            <?php endif; ?>
-
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 header-info">
-              <ul class="header-contacts">
-                <li><i class="glyphicon glyphicon-phone"></i> <?php print $phone_contact;?></li>
-                <li><i class="glyphicon glyphicon-envelope"></i> <?php print $contact_email;?></li>
-              </ul>
-              <?php if($social_network): ?>
-                <?php print $social_network; ?>
-              <?php endif; ?>
-              <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md">
-                <i class="glyphicon glyphicon-align-justify"></i>
-                <span>меню</span>
-              </a>
-            </div>
-
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+          <a class="site-logo" href="/" title="<?php print $site_name; ?>">
+            <img src="/sites/all/themes/zu/library/img/zu_logo.png" alt="<?php print $site_name; ?>">
+          </a>
         </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 header-right">
-          <div class="row">
-          <?php  if($page['toolbar']): ?>
-              <?php print render($page['toolbar']); ?>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <?php if($page['toolbar']): ?>
+            <?php print render($page['toolbar']); ?>
           <?php endif;  ?>
-          </div>
         </div>
-
+        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+          <a class="cds-logo" href="/" title="<?php print $site_name; ?>">
+            <img src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -52,9 +25,11 @@
   <div id="nav">
     <div class="container">
       <div class="row">
+
         <div class="col-lg-12">
-          <a href="#mobile-menu" class="mobile-menu-btn second hidden-lg hidden-md">
-            <i class="glyphicon glyphicon-align-justify"></i>
+          <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md">
+            <i class="fa fa-bars"></i>
+            <span>меню</span>
           </a>
           <?php if($page['main_menu']): ?>
             <?php print render($page['main_menu']); ?>
@@ -69,10 +44,10 @@
             <?php print render($page['user_menu']); ?>
           <?php endif; ?>
         </div>
+
       </div>
     </div>
-  </diuv>
+  </div>
 
 </header>
-
 <div class="clearfix"></div>

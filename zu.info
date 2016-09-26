@@ -11,13 +11,14 @@ stylesheets[all][] = library/css/jquery.mmenu.all.css
 stylesheets[all][] = library/css/jquery-ui.css
 stylesheets[all][] = library/css/helpers.css
 stylesheets[all][] = library/css/update.css
-stylesheets[all][] = library/css/form.simple.css
 
 stylesheets[all][] = library/less/theme.less
-stylesheets[all][] = library/css/bootstrap.min.css
-stylesheets[all][] = library/css/font-awesome.min.css
-stylesheets[all][] = bower_components/bootswatch/simplex/bootswatch.less
-stylesheets[all][] = bower_components/bootswatch/simplex/variables.less
+
+;stylesheets[all][] = library/css/form.simple.css
+;stylesheets[all][] = library/css/bootstrap.min.css
+;stylesheets[all][] = library/css/font-awesome.min.css
+;stylesheets[all][] = bower_components/bootswatch/simplex/bootswatch.less
+;stylesheets[all][] = bower_components/bootswatch/simplex/variables.less
 stylesheets[all][] = bower_components/fancybox/source/jquery.fancybox.css
 stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css
 stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css

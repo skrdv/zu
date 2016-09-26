@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+// Mixins
+
+.color(@color) {
+	color: @color-white;
+	background: @color;
+	&:hover {
+		background: darken(@color, 10%);
+	}
+}
+
+
+
+
+
+// Layout
+
+.page-school-news .bg-img-line,
+.node-type-news-school .bg-img-line {
+	background: url(../img/bgs/line_school.png) center center repeat;
+	background-size: 200%;
+}
+
+.page-students-news .bg-img-line,
+.node-type-news-students .bg-img-line {
+	background: url(../img/bgs/line_students.png) center center repeat;
+	background-size: 200%;
+}
+
+
+/*
+
+*/
+
+
+
+#main {
+	padding: 30px 0
+}
+
+// Pages
+
+.page-node.front {
+	.content .front-half {
+		margin-bottom: 30px;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	}
+}
+
+
+
+
+
+
+
+
+// Media queries
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+	#header {
+		.header-left {
+			.site-logo {
+				text-align: center;
+			}
+			.header-info {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				.header-contacts {
+					padding: 0;
+					width: 40% !important;
+				}
+			}
+			.mobile-menu-btn {
+				position: absolute;
+				right: 30px;
+				top: -70px;
+			}
+		} //end left
+		.header-right {
+			padding-bottom: 15px;
+			text-align: center;
+			.btn-work-school,
+			.btn-work-students,
+			 .btn-casting-school,
+			 .btn-casting-students {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+			}
+
+		}
+	}
+
+	#nav {
+		.main-nav.nav-school,
+		.main-nav.nav-students {
+			display: none;
+		}
+	}
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	#header {
+		.header-left .site-logo {
+			text-align: center;
+		}
+	}
+	#nav {
+		.main-nav.nav-school,
+		.main-nav.nav-students {
+			display: none;
+		}
+	}
+
+}
+
+/* Small Monitor */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	#header {
+		height: 110px;
+
+	}
+
+
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) {
+
+	#header {
+		height: 110px;
+	}
+
+}
