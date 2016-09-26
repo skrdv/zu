@@ -3,9 +3,14 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
           <a class="site-logo" href="/" title="<?php print $site_name; ?>">
             <img src="/sites/all/themes/zu/library/img/zu_logo.png" alt="<?php print $site_name; ?>">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 hidden-md hidden-lg">
+          <a class="cds-logo" href="/" title="<?php print $site_name; ?>">
+            <img src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
           </a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -25,12 +30,11 @@
   <div id="nav">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-12">
-          <a href="#mobile-menu" class="mobile-menu-btn hidden-lg hidden-md">
+          <div class="menu-btn hidden-lg hidden-md">
             <i class="fa fa-bars"></i>
-            <span>меню</span>
-          </a>
+            <span>МЕНЮ</span>
+          </div>
           <?php if($page['main_menu']): ?>
             <?php print render($page['main_menu']); ?>
           <?php endif; ?>
@@ -44,7 +48,6 @@
             <?php print render($page['user_menu']); ?>
           <?php endif; ?>
         </div>
-
       </div>
     </div>
   </div>

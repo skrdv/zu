@@ -101,25 +101,14 @@
 
 
 // Header 
-.site-header {
-	position: relative;
-	z-index: 1000001;
-
-	.mobile-menu-btn {
-		float: right;
-		margin: 30px 0;
-		margin-left: 3px;
-		i {
-			line-height: 30px;
-		}
-	}
-}
-
 #header {
-	.site-logo,
-	.cds-logo {
+	.site-logo {
 		display: block;
 		margin: 10px 0;
+	}
+	.cds-logo {
+		display: block;
+		margin: 20px 0;
 	}
 	.header-contact {
 		margin: 10px 0 10px 0;
@@ -140,22 +129,21 @@
 		margin: 0;
 		padding: 0;
 		li {
-			float: left;
+			display: inline-block;
 			width: 30px;
 			height: 30px;
 			margin-right: 3px;
 			overflow: hidden;
 			a {
+				display: block;
 				height: 30px;
 				width: 30px;
-				line-height: 30px;
 				text-align: center;
-				float: left;
 				font-size: 14px;
-				border: 1px solid @color-00;
+				border: 2px solid @color-00;
 				border-radius: 50%;
 				i {
-					line-height: 30px;
+					line-height: 26px;
 					color: @color-00;
 				}
 			}
@@ -173,7 +161,7 @@
 		li {
 			list-style: none;
 			font-size: 20px;
-			line-height: 25px;
+			line-height: 30px;
 			i {
 				width: 25px;
 				color: @color-00;
@@ -181,7 +169,7 @@
 			}
 			a:hover {
 				text-decoration: none;
-				color: @color-00;
+				color: @color-black;
 			}
 		}
 	}
@@ -192,7 +180,22 @@
 
 // Navigation
 #nav {
+	position: relative;
+	z-index: 1000001;
 	background: @color-00;
+	
+	.menu-btn {
+		float: left;
+		margin: 15px 0;
+		color: @color-white;
+		i {
+			line-height: 30px;
+		}
+	}
+
+	ul li.expanded {
+		list-style: none;
+	}
 
 	.main-nav {
 		li.leaf {
@@ -202,6 +205,7 @@
 			margin: 0;
 			a {
 				padding: 15px;
+				text-transform: uppercase;
 				&:hover {
 					color: @color-white;
 				}
@@ -299,6 +303,7 @@ nav.header-nav {
 			position: relative;
 
 			> a {
+				width: 100%;
 				font-family: @headings-font-family;
 				font-size: 18px;
 				font-weight: bold;
@@ -322,6 +327,7 @@ nav.header-nav {
 				margin: 0;
 				padding: 0;
 				display: none;
+				background: @color-00;
 				box-shadow: 4px 4px 4px rgba(000,000,000,0.5);
 
 				> li {
@@ -422,180 +428,33 @@ nav.header-nav {
 
 
 
-
-/*
-	52. Riva Styles
-
-div.rivaCarouselNav {
-	float: left;
-	width: auto;
-
-	a {
-		cursor: pointer;
-		display: inline-block;
-
-		i.fa {
-			float: left;
-			line-height: inherit;
-		}
-	}
-
-	a:last-child {
-	}
-}
-div.rivaCarouselNavBullets {
-	float: left;
-
-	a {
-		margin: 0px 3px;
-		display: inline-block;
-	}
-}
-div.rivaCarouselWrapper {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-	position: relative;
-
-	div.rivaCarouselWrapperInner {
-		width: 100000px;
-		position: absolute;
-		left: 0px;
-		top: 0px;
-	}
-}
-div.rivaCarouselWrapperVertical {
-
-	div.rivaCarouselItem {
-		width: 100%;
-	}
-
-	div.rivaCarouselWrapperInner {
-		width: 100%;
-		height: 10000px;
-	}
-}
-div.rivaCarouselItem {
-	float: left;
-	box-sizing: border-box;
-}
-div.rivaCarouselItem.cloned {
-	border: 0px solid #f00;
-}
-.riva-sorting {
-	width: 100%;
-	margin-top: @leading;
-	display: inline-block;
-
-	.listing {
-		margin-top: @leading;
-	}
-
-	.project-item, .m-accordion {
-		margin-top: 0;
-	}
-
-	> .filter-form {
-		display: none;
-	}
-
-	> .filters.st2 {
-
-		> span {
-			background-color: transparent !important;
-			border: 1px solid rgba(255,255,255,0.3) !important;
-			color: rgba(255,255,255,0.3) !important;
-		}
-
-		> span.active {
-			background-color: @color_primary !important;
-			color: #fff !important;
-			border: 1px solid @color_primary !important;
-		}
-	}
-
-	> .filters {
-		width: 100%;
-		float: left;
-		text-align: center;
-
-		> span {
-			width: auto;
-			float: left;
-			margin-right: 10px;
-			text-transform: uppercase;
-			font-family: @h_font_family;
-			color: @h_text_color;
-			cursor: pointer;
-			transition: @transition;
-		}
-
-		> span.active {
-			border-bottom: 1px dashed @color_primary;
-			color: @color_primary;
-		}
-
-		> :last-child {
-			margin-right: 0;
-		}
-	}
-
-	> .listing {
-		width: 100%;
-		float: left;
-	}
-}
-*/
-
-
-
-
 // Media queries
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
 	#header {
-		.header-left {
-			.site-logo {
-				text-align: center;
-			}
-			.header-info {
-				margin: 0;
-				padding: 0;
-				text-align: center;
-				.header-contacts {
-					padding: 0;
-					width: 40% !important;
-				}
-			}
-			.mobile-menu-btn {
-				position: absolute;
-				right: 30px;
-				top: -70px;
-			}
-		} //end left
-		.header-right {
-			padding-bottom: 15px;
+		.site-logo {
 			text-align: center;
-			.btn-work-school,
-			.btn-work-students,
-			 .btn-casting-school,
-			 .btn-casting-students {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-content: center;
-				align-items: center;
-			}
-
+		}
+		.cds-logo {
+			text-align: center;
+		}
+		.header-contact {
+			text-align: center;
+		}
+		.header-soc-btns {
+			text-align: center;
+		}
+		.header-action {
+			text-align: center;
 		}
 	}
 
 	#nav {
 		.main-nav.nav-school,
 		.main-nav.nav-students {
-			display: none;
+			//display: none;
 		}
 	}
 
@@ -605,7 +464,19 @@ div.rivaCarouselItem.cloned {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	#header {
-		.header-left .site-logo {
+		.site-logo {
+			text-align: center;
+		}
+		.cds-logo {
+			text-align: center;
+		}
+		.header-contact {
+			text-align: center;
+		}
+		.header-soc-btns {
+			text-align: center;
+		}
+		.header-action {
 			text-align: center;
 		}
 	}

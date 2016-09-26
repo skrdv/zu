@@ -14,12 +14,6 @@
           <?php print t('Skip to main content'); ?>
         </a>
     </div>
-    <?php // $zu_disable_switch = theme_get_setting('zu_disable_switch','zu');?>
-    <?php // $background_style = theme_get_setting('background_style','zu'); ?>
-    <?php // $zu_bg_image = theme_get_setting('zu_bg_image','zu'); ?>
-    <?php // $zu_direction = theme_get_setting('zu_direction','zu'); ?>
-    <?php // $zu_layout = theme_get_setting('zu_layout','zu'); ?>
-    <?php // $zu_style = theme_get_setting('zu_style','zu'); ?>
     <div id="page">
         <div id="riva-preload"></div>
         <div id="riva-site-wrapper" class="page-wrap use-ltr wide-layout light-theme">

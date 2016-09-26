@@ -116,7 +116,7 @@ var path = Drupal.settings.pathToTheme;
 		}
 
 		/*	Mobile menu */
-
+		/*
 		$( '.header-nav > ul' ).clone().removeAttr( 'id' ).find( 'li' ).removeClass( 'active' ).end().appendTo( '#mobile-menu' );
 
 	    $('#mobile-menu').mmenu({
@@ -130,7 +130,7 @@ var path = Drupal.settings.pathToTheme;
                 title   : 'mmenu'
             }]
         });
-
+		*/
 		/*	Parallax	*/
 
 		$( '[data-background="parallax"]' ).each(function(){
