@@ -10,7 +10,7 @@ stylesheets[all][] = library/css/animate.min.css
 stylesheets[all][] = library/css/jquery.mmenu.all.css
 stylesheets[all][] = library/css/jquery-ui.css
 stylesheets[all][] = library/css/helpers.css
-stylesheets[all][] = library/css/update.css
+;stylesheets[all][] = library/css/update.css
 
 stylesheets[all][] = library/less/theme.less
 

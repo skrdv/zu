@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-
+  <div class="clearfix"></div>
   <div id="nav">
     <div class="container">
       <div class="row">
