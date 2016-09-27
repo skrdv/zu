@@ -54,3 +54,5 @@ temp/
 bower_components*
 node_modules*
 .remote-sync.json
+sftp-config.json
+
