@@ -13,7 +13,7 @@
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <div class="row">
           <div class="founders">
-            <div class="header">При поддержке</div>
+            <div class="header small">При поддержке</div>
             <ul class="list-unstyled small">
               <li>Комитета по образованию правительства Санкт-Петербурга</li>
               <li>Комитета по социальной политике правительства Санкт-Петербурга</li>
@@ -30,7 +30,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
         <a class="cds-logo" href="/" title="">
-          <img class="img-responsive" src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
+          <img src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
         </a>
       </div> 
       <div class="col-xs-12 col-sm-6 hidden-md hidden-lg">

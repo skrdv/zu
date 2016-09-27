@@ -45,10 +45,15 @@
 .align-right {
 	text-align: right;
 }
+.margin-left-30 {
+  margin-left: 30px;
+}
+.margin-left-15 {
+  margin-left: 15px;
+}
 .visible {
 	display: block !important;
 }
-
 .img-responsive, a > img {
   display: inline-block;
   max-width: 100%;
@@ -56,6 +61,17 @@
 }
 
 
+// Forms
+legend {
+  margin-bottom: 0;
+}
+.radio label,
+.checkbox label {
+  padding-left: 0;
+}
+.form-type-radio {
+  margin-left: 20px;
+}
 
 
 
@@ -107,12 +123,7 @@
 }
 
 
-#header,
-#main {
-	.container {
-		background: @color-white;
-	}
-}
+
 
 
 .move-to-the-top {
@@ -124,6 +135,10 @@
 
 // Header 
 #header {
+	.container {
+		height: 110px;
+		background: @color-white;
+	}
 	.site-logo {
 		display: block;
 		margin: 10px 0;
@@ -210,7 +225,7 @@
 // Nav
 #nav {
 	position: relative;
-	z-index: 1000001;
+	z-index: 999;
 	height: 55px;
 	
 	.container {
@@ -230,7 +245,8 @@
 		}
 	}
 
-	ul li.expanded {
+	ul li.expanded,
+    ul li.collapsed {
 		list-style: none;
 	}
 
@@ -261,6 +277,14 @@
 			}
 
 		}
+        &.nav-front {
+          .color1 {
+            .color(@color-02);
+          }
+          .color2 {
+            .color(@color-11);
+          }
+        }
 		&.nav-school {
 			.color1 {
 				.color(@color-01);
@@ -503,41 +527,29 @@ nav.header-nav {
 #main {
 	.container {
 		padding: 15px 0;
+		background: @color-white;
 	}
-	
 }
-
-
-
-
-.page-0news .bg-img-line,
-.node-type-news-school .bg-img-line {
-	background: url(../img/bgs/line_school.png) center center repeat;
-	background-size: 200%;
-}
-
-.page-1news .bg-img-line,
-.node-type-news-students .bg-img-line {
-	background: url(../img/bgs/line_students.png) center center repeat;
-	background-size: 200%;
-}
-
-
-
 
 
 
 // Pages
 
 .page-node.front {
-	.content .front-half {
-		margin-bottom: 30px;
-		display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-	}
+	.content {
+      .front-half {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .arh-link {
+        text-align: center;
+        margin: 15px 0;
+      }
+    }
 }
 
 
@@ -573,19 +585,17 @@ nav.header-nav {
 	}
 
 	#nav {
-		.block-menu-block {
-			display: none;
+		.nav-school,
+        .nav-students {
+			//display: none;
 		}
 		.main-nav {
-			margin-left: -15px;
-			margin-right: -15px;
 			li {
 				width: 100%;
 				text-align: center !important;
 				ul {
 					position: relative;
 					top: 0;
-					left: -15px;
 					width: 100%;
 				}
 			}
@@ -632,19 +642,17 @@ nav.header-nav {
 	}
 	
 	#nav {
-		.block-menu-block {
-			display: none;
-		}
+      .nav-school,
+      .nav-students {
+        //display: none;
+      }
 		.main-nav {
-			margin-left: -15px;
-			margin-right: -15px;
 			li {
 				width: 100%;
 				text-align: center !important;
 				ul {
 					position: relative;
 					top: 0;
-					left: -15px;
 					width: 100%;
 				}
 			}
