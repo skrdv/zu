@@ -5,22 +5,12 @@ var path = Drupal.settings.pathToTheme;
 	$( 'document' ).ready(function() {
 
 		/*	Settings	*/
-		var useRTL = false,
-			usePreloader = true,
-			useDarkTheme = false,
-			useBoxedLayout = false,
-			useBoxedShadow = false,
-			useTopMargin = false,
-			useBottomMargin = false,
+		var usePreloader = true,
 			useCustomMainMenuAnimation = false,			//	please do not change
-			useStickedMainMenu = true,
-//			setCustomMainMenuAnimationIn = 'fadeInLeft',
-//			setCustomMainMenuAnimationOut = 'flipOutY',
+			useStickedMainMenu = false,
 			setMainMenuAnimation = 'slide',				//	slide, fade or show
 			setMainMenuAnimationSpeed = 400,
 			setPreloaderStyle = 2,						//	from 1 to 5
-			setTopMargin = 30,
-			setBottomMargin = 30,						
 			/********************************/
 			$rivaSiteWrapper = $( '#riva-site-wrapper');
 
@@ -61,40 +51,14 @@ var path = Drupal.settings.pathToTheme;
 			$sitePreloaderCode.appendTo( $sitePreloaderMarker );
 		}
 
-		/*	Layout*/
 
-		if ( useBoxedLayout ) {
 
-			$rivaSiteWrapper.addClass( 'boxed-layout' );
-
-			if ( useBoxedShadow ) {
-
-				$rivaSiteWrapper.addClass( 'boxed-shadow' );
-			}
-
-		}
-
-		/*	Top Margin   */
-
-		if ( useTopMargin ) {
-
-			$rivaSiteWrapper.css( 'margin-top', setTopMargin + 'px' );
-
-		}
-
-		/*	Bottom Margin   */
-
-		if ( useBottomMargin ) {
-
-			$rivaSiteWrapper.css( 'margin-bottom', setBottomMargin + 'px' );
-
-		}
 
 
 		/*	Mobile menu */
 		
 		$('.menu-btn').on('click', function(){
-			$('#nav').find('.block-menu-block').toggle();
+			$('#nav').find('.main-nav').toggle();
 		});
 
 

@@ -1,22 +1,5 @@
 <?php
 
-/*
-$zu_skin = theme_get_setting('zu_skin', 'zu');
-$skin_color = '/css/skins/default.css';
-$css_skin = array(
-  '#tag' => 'link', // The #tag is the html tag - <link />
-  '#attributes' => array( // Set up an array of attributes inside the tag
-  'href' => base_path().path_to_theme().$skin_color,
-  'rel' => 'stylesheet',
-  'type' => 'text/css',
-  'id' => 'zu-site-color',
-  ),
-  '#weight' => 2,
-);
-drupal_add_html_head($css_skin, 'skin');
-*/
-
-
 function zu_preprocess_html(&$variables) {
   drupal_add_css('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic', array('type' => 'external'));
 }
@@ -53,6 +36,9 @@ function zu_preprocess_node(&$vars) {
 }
 
 function zu_form_alter(&$form, &$form_state, $form_id) {
+
+//    $form['input']['#attributes']['class'] = 'test';
+
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
     $form['search_block_form']['#default_value'] = t(''); // Set a default value for the textfield
@@ -74,14 +60,15 @@ function zu_form_alter(&$form, &$form_state, $form_id) {
 
 }
 
+
+
 function zu_breadcrumb($variables) {
   $crumbs ='';
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     $crumbs .= '';
     foreach($breadcrumb as $value) {
-
-      $crumbs .= $value.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-triangle-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+      $crumbs .= $value.'&nbsp;&nbsp;<i class="fa fa-caret-right"></i>&nbsp;&nbsp;';
     }
     $crumbs .= drupal_get_title();
     return $crumbs;
@@ -110,19 +97,21 @@ function zu_menu_tree__main_menu(array $variables) {
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
 
-function zu_menu_tree__user_menu(array $variables) {
-  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
-  return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
+function zu_menu_tree__menu_front(array $variables) {
+    // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
+    return '<ul class="main-nav nav-front">' . $variables['tree'] . '</ul>';
 }
 
 function zu_menu_tree__menu_school(array $variables) {
-  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
   return '<ul class="main-nav nav-school">' . $variables['tree'] . '</ul>';
 }
 
 function zu_menu_tree__menu_students(array $variables) {
-  // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
   return '<ul class="main-nav nav-students">' . $variables['tree'] . '</ul>';
+}
+
+function zu_menu_tree__user_menu(array $variables) {
+    return '<ul class="main-nav nav-user">' . $variables['tree'] . '</ul>';
 }
 
 function zu_menu_tree__menu_footer_menu($variables) {

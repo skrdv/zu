@@ -22,7 +22,6 @@
   ],
   "dependencies": {
     "jquery": "1.9.1",
-    "normalize-less": "*",
     "font-awesome": "fontawesome#^4.6.3",
     "fancybox": "^2.1.5",
     "bootswatch": "^3.3.7"
