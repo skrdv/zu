@@ -50,6 +50,11 @@
 	//visibility: visible;
 }
 
+.img-responsive, a > img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -111,6 +116,12 @@
 	}
 }
 
+.move-to-the-top {
+	position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
 
 // Header 
 #header {
@@ -121,6 +132,7 @@
 	.cds-logo {
 		display: block;
 		margin: 20px 0;
+		text-align: right;
 	}
 	.header-contact {
 		margin: 10px 0 10px 0;
@@ -129,6 +141,12 @@
 			list-style: none;
 			font-size: 20px;
 			line-height: 25px;
+			&:nth-child(2) {
+				span {
+					font-size: 14px;
+    			vertical-align: top;
+				}
+			}
 			i {
 				width: 25px;
 				color: @color-00;
@@ -200,7 +218,7 @@
 	.container {
 		background: transparent;
 	}
-	
+
 	.menu-btn {
 		float: left;
 		margin: 15px 0;
@@ -386,7 +404,74 @@ nav.header-nav {
 }
 
 
+// Footer
+#footer {
+	padding-top: 50px;
+	background: url(../img/footer.png) center top no-repeat;
 
+	.kira-all {
+		display: block;
+		margin: 15px 0;
+		&:hover {
+			text-decoration: none;
+		}
+		&.mobile {
+			.logo {
+				width: 70px;
+				display: inline-block;
+			}
+			p {
+				display: inline-block;
+				margin-bottom: 0;
+				line-height: 16px;
+				text-align: right;
+				vertical-align: middle;
+			}
+		}
+		.logo {
+			img {
+				width: 60px;
+				background: #ff1493;
+			}	
+		}
+		p {
+			line-height: 12px;
+			color: @brand-primary;
+		}
+	}
+
+	.cds-logo {
+		display: block;
+    margin: 35px 0;
+	}
+
+	.founders {
+		margin-top: 15px;
+		.header {
+			margin-bottom: 5px;
+		}
+		li {
+			padding-left: 32px;
+			display: inline-block;
+    	vertical-align: top;
+    	line-height: 12px;
+			background: url(/sites/all/themes/zu/library/img/comitet.png) no-repeat left top;
+			&:nth-child(1) {
+				width: 17%;
+			}
+			&:nth-child(2) {
+				width: 22%;
+			}
+			&:nth-child(3) {
+				width: 27%;
+			}
+			&:nth-child(4) {
+				width: 21%;
+			}
+		}
+
+	}
+}
 
 
 
@@ -477,7 +562,21 @@ nav.header-nav {
 		}
 	}
 
-
+	#footer {
+		.founders {
+			margin: 15px;
+		}
+		.cds-logo {
+			margin: 5px 0;
+			text-align: center;
+		}
+		.kira-all {
+			text-align: center;
+			p {
+				text-align: right;
+			}
+		}
+	}
 
 }
 
@@ -518,6 +617,22 @@ nav.header-nav {
 					left: -15px;
 					width: 100%;
 				}
+			}
+		}
+	}
+
+	#footer {
+		.founders {
+			margin: 15px;
+		}
+		.cds-logo {
+			margin: 15px 0;
+			text-align: center;
+		}
+		.kira-all {
+			text-align: center;
+			p {
+				text-align: right;
 			}
 		}
 	}
