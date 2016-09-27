@@ -107,64 +107,14 @@ var path = Drupal.settings.pathToTheme;
 
 		}
 
-		/* Parallax Speed */
-
-		if ( setParallaxSpeed < 1 && setParallaxSpeed > 10 ) {
-
-			setParallaxSpeed = 6;
-
-		}
 
 		/*	Mobile menu */
-		/*
-		$( '.header-nav > ul' ).clone().removeAttr( 'id' ).find( 'li' ).removeClass( 'active' ).end().appendTo( '#mobile-menu' );
-
-	    $('#mobile-menu').mmenu({
-            extensions      : [ 'widescreen', 'theme-dark', 'effect-slide-menu' ],
-
-            counters        : true,
-            dividers        : {
-                fixed   : true
-            },
-            navbars         : [{
-                title   : 'mmenu'
-            }]
-        });
-		*/
-		/*	Parallax	*/
-
-		$( '[data-background="parallax"]' ).each(function(){
-
-			var $bgobj = $(this),
-				$window = $(window);
-
-			$window.scroll(function() {
-
-				var yPos = -( ( $window.scrollTop() - $bgobj.offset().top ) / setParallaxSpeed );
-
-				// Put together our final background position
-
-				var coords = '50% '+ yPos + 'px';
-
-				// Move the background
-
-				$bgobj.css({ backgroundPosition: coords });
-
-			});
-
+		
+		$('.menu-btn').on('click', function(){
+			$('#nav').find('.block-menu-block').toggle();
 		});
 
-		/*	Transparent backgroundPosition	*/
 
-		$( '[data-transparent]' ).each( function() {
-
-			var $this = $(this);
-
-			$this.wrapInner( '<div class="transparent-wrapper"></div>' );
-
-			$( '<div class="transparent-bg"></div>' ).insertBefore( $this.find( '.transparent-wrapper' ) );
-
-		} );
 
 		/*	Fancybox	*/
 
@@ -309,6 +259,14 @@ var path = Drupal.settings.pathToTheme;
 		} );
 
 		$( 'body' ).on( 'click', '.move-to-the-top', function(e) { e.preventDefault(); $('body,html').animate({scrollTop: 0}, 500); });
+
+
+
+
+
+
+
+
 
 		/*	Post */
 
@@ -493,117 +451,7 @@ var path = Drupal.settings.pathToTheme;
 
 		} );
 
-		/*	Settings	*/
-
-		$( '#m-settings-btn-show' ).on( 'click', function() {
-
-			$( this ).animate( {
-				'right': '-40px'
-			} );
-
-			$( '#m-settings-block' ).animate( {
-				'right': 0
-			} );
-
-		} );
-
-		$( '#m-settings-btn-hide' ).on( 'click', function() {
-
-			$( '#m-settings-btn-show' ).animate( {
-				'right': '0px'
-			} );
-
-			$( '#m-settings-block' ).animate( {
-				'right': '-320px'
-			} );
-
-		} );
-
-		$( '#m-settings-block' ).find( 'a' ).on( 'click', function(e) {
-
-			var $this = $( this );
-
-			e.preventDefault();
-
-			if ( $this.attr( 'data-layout' ) != undefined ) {
-
-				if ( $this.attr( 'data-layout' ) == 'boxed' ) {
-
-					$rivaSiteWrapper.addClass( 'boxed-layout' );
-
-				} else {
-
-					$rivaSiteWrapper.removeClass( 'boxed-layout' );
-
-				}
-
-				$( '#m-settings-block' ).find( 'a[data-layout]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			} else if ( $this.attr( 'data-dir' ) != undefined ) {
-
-				if ( $this.attr( 'data-dir' ) == 'rtl' ) {
-
-					$rivaSiteWrapper.addClass( 'use-rtl' );
-
-				} else {
-
-					$rivaSiteWrapper.removeClass( 'use-rtl' );
-
-				}
-
-				$( '#m-settings-block' ).find( 'a[data-dir]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			} else if ( $this.attr( 'data-style' ) != undefined ) {
-
-				if ( $this.attr( 'data-style' ) == 'dark' ) {
-
-					$rivaSiteWrapper.addClass( 'dark-theme' );
-
-				} else {
-
-					$rivaSiteWrapper.removeClass( 'dark-theme' );
-
-				}
-
-				$( '#m-settings-block' ).find( 'a[data-style]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			} else if ( $this.attr( 'data-skin' ) != undefined ) {
-
-				$( '#site-skin' ).attr( 'href',+path+'/css/skins/' + $this.attr( 'data-skin' ) + '.css' );
-
-				$( '#m-settings-block' ).find( 'a[data-skin]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			} else if ( $this.attr( 'data-pattern' ) != undefined ) {
-
-					console.log( $( '#page' ).length );
-
-				$( '#page' ).attr( 'data-background', 'pattern' ).css( {
-					'background-image': 'url('+path+'/img/body/pat/' + $this.attr( 'data-pattern' ) + '.png)'
-				} );
-
-				$( '#m-settings-block' ).find( 'a[data-pattern], a[data-bg]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			} else if ( $this.attr( 'data-bg' ) != undefined ) {
-
-				$( '#page' ).attr( 'data-background', 'image' ).css( 'background-image', 'url('+path+'/img/body/img/' + $this.attr( 'data-bg' ) + '.jpg)' );
-
-				$( '#m-settings-block' ).find( 'a[data-pattern], a[data-bg]' ).removeClass( 'active' );
-
-				$this.addClass( 'active' );
-
-			}
-
-		} );
+		
 
 	});
 
