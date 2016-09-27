@@ -19,7 +19,6 @@
         <div id="riva-site-wrapper" class="page-wrap use-ltr wide-layout light-theme">
             <?php print $page_top; ?><?php print $page; ?><?php print $page_bottom; ?>
             <div class="move-to-the-top"><i class="glyphicon glyphicon-triangle-top"></i></div>
-            <nav id="mobile-menu"></nav>
         </div>
     </div>
     <?php print $scripts; ?>

@@ -1,4 +1,4 @@
-<header class="site-header" role="banner">
+<header role="banner">
 
   <div id="header">
     <div class="container">
@@ -30,7 +30,7 @@
   <div id="nav">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+
           <div class="menu-btn hidden-lg hidden-md">
             <i class="fa fa-bars"></i>
             <span>МЕНЮ</span>
@@ -47,7 +47,7 @@
           <?php if($page['user_menu']): ?>
             <?php print render($page['user_menu']); ?>
           <?php endif; ?>
-        </div>
+
       </div>
     </div>
   </div>

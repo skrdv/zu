@@ -13,27 +13,18 @@ var path = Drupal.settings.pathToTheme;
 			useTopMargin = false,
 			useBottomMargin = false,
 			useCustomMainMenuAnimation = false,			//	please do not change
-			useStickedMainMenu = false,
+			useStickedMainMenu = true,
 //			setCustomMainMenuAnimationIn = 'fadeInLeft',
 //			setCustomMainMenuAnimationOut = 'flipOutY',
 			setMainMenuAnimation = 'slide',				//	slide, fade or show
 			setMainMenuAnimationSpeed = 400,
 			setPreloaderStyle = 2,						//	from 1 to 5
 			setTopMargin = 30,
-			setBottomMargin = 30,
-			setParallaxSpeed = 4,						//	from 0 to 10
+			setBottomMargin = 30,						
 			/********************************/
 			$rivaSiteWrapper = $( '#riva-site-wrapper');
 
-		/*	RTL */
-
-		if ( useRTL ) {
-
-			$rivaSiteWrapper.addClass( 'use-rtl' );
-
-		}
 		/* Preloader */
-
 		if ( usePreloader ) {
 
 			var $sitePreloaderCode = null,
@@ -68,14 +59,6 @@ var path = Drupal.settings.pathToTheme;
 			}
 
 			$sitePreloaderCode.appendTo( $sitePreloaderMarker );
-		}
-
-		/*	Dark Theme*/
-
-		if ( useDarkTheme ) {
-
-			$rivaSiteWrapper.addClass( 'dark-theme' );
-
 		}
 
 		/*	Layout*/
@@ -222,19 +205,19 @@ var path = Drupal.settings.pathToTheme;
 
 			setTimeout( function() {
 
-				$('#site-head').scrollFix();
+				$('#nav').scrollFix();
 
 			}, 1000 );
 
 			$(window).scroll(function () {
 
-				if ( $( this ).scrollTop() > 300 ) {
+				if ( $( this ).scrollTop() > 165 ) {
 
-					$( '#site-head' ).addClass( 'scrolled' ).find( '.to-slide' ).slideUp();
+					$( '#nav' ).addClass( 'scrolled' );
 
 				} else {
 
-					$( '#site-head' ).removeClass( 'scrolled' ).find( '.to-slide' ).slideDown();
+					$( '#nav' ).removeClass( 'scrolled' );
 
 				}
 

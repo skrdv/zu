@@ -47,7 +47,6 @@
 }
 .visible {
 	display: block !important;
-	//visibility: visible;
 }
 
 .img-responsive, a > img {
@@ -108,13 +107,13 @@
 }
 
 
-
-.container {
-	background: @color-white;
+#header,
+#main {
 	.container {
-		background: transparent;
+		background: @color-white;
 	}
 }
+
 
 .move-to-the-top {
 	position: fixed;
@@ -131,7 +130,7 @@
 	}
 	.cds-logo {
 		display: block;
-		margin: 20px 0;
+		margin: 25px 0;
 		text-align: right;
 	}
 	.header-contact {
@@ -208,19 +207,19 @@
 
 
 
-// Navigation
+// Nav
 #nav {
 	position: relative;
 	z-index: 1000001;
 	height: 55px;
-	background: @color-00;
 	
 	.container {
-		background: transparent;
+		background: @color-00;
 	}
 
 	.menu-btn {
 		float: left;
+		height: 25px;
 		margin: 15px 0;
 		color: @color-white;
 		font-size: 18px;
@@ -406,8 +405,11 @@ nav.header-nav {
 
 // Footer
 #footer {
-	padding-top: 50px;
-	background: url(../img/footer.png) center top no-repeat;
+	.container {
+		padding-top: 50px;
+		background: @color-white url(../img/footer.png) center top no-repeat;
+	}
+	
 
 	.kira-all {
 		display: block;
@@ -476,8 +478,38 @@ nav.header-nav {
 
 
 
+.page-title-bar {
+	
+	.container {
+		height: 70px;
+		background: url(../img/breadcrumbs.png) no-repeat center center;
+	}
+	.title {
+		margin: 8px 0 8px 15px;
+		color: @color-white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.breadcrumbs {
+		margin-left: 15px;
+		color: @color-white;
+		a {
+			color: @color-white;
+		}
+	}
+}
 
-// Layout
+
+#main {
+	.container {
+		padding: 15px 0;
+	}
+	
+}
+
+
+
+
 .page-0news .bg-img-line,
 .node-type-news-school .bg-img-line {
 	background: url(../img/bgs/line_school.png) center center repeat;
@@ -493,9 +525,7 @@ nav.header-nav {
 
 
 
-#main {
-	padding: 30px 0
-}
+
 
 // Pages
 
