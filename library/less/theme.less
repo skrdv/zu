@@ -21,6 +21,15 @@
 }
 
 
+// System
+ul.primary li a {
+	// color: @color-white;
+	background: transparent;
+	&.active,
+	&:hover {
+		// color: @color-black;
+	}
+}
 
 
 // Helpers
@@ -515,6 +524,7 @@ nav.header-nav {
 		text-transform: uppercase;
 	}
 	.breadcrumbs {
+		display: none !important;
 		margin-left: 15px;
 		color: @color-white;
 		a {
@@ -741,7 +751,7 @@ nav.header-nav {
     #nav {
       .nav-school,
       .nav-students {
-        display: block;
+        // display: block;
       }
     }
 
@@ -757,7 +767,7 @@ nav.header-nav {
   #nav {
     .nav-school,
     .nav-students {
-      display: block;
+      // display: block;
     }
   }
 

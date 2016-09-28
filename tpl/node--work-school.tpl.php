@@ -126,7 +126,8 @@
 			    	<i class="glyphicon glyphicon-comment"></i><a href="<?php print $node_url; ?>">&nbsp;<?php print $comment_count;?>&nbsp;<?php print t('comments');?></a>
 			    </span>
 			    <span>
-			    	<i class="glyphicon glyphicon-user"></i><font style="color:#222222"><?php print strip_tags($name); ?></font>
+			    	<i class="glyphicon glyphicon-user"></i><font style="color:#222222">
+			    	<?php print strip_tags($name); ?></font>
 			    </span>
 			    </p>
 			</footer>
