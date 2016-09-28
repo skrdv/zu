@@ -124,6 +124,8 @@ table,
 // Forms ======================================================================
 
 .form-control,
+.form-select,
+.form-text,
 input {
   border-width: 2px;
   .box-shadow(none);
@@ -149,7 +151,9 @@ input {
   }
 
   .form-control,
-  .form-control:focus {
+  .form-control:focus,
+  .form-text,
+  .form-text:focus {
     border: 2px solid @brand-warning;
   }
 
@@ -174,7 +178,9 @@ input {
   }
 
   .form-control,
-  .form-control:focus {
+  .form-control:focus,
+  .form-text,
+  .form-text:focus {
     border: 2px solid @brand-danger;
   }
 
@@ -199,7 +205,9 @@ input {
   }
 
   .form-control,
-  .form-control:focus {
+  .form-control:focus,
+  .form-text,
+  .form-text:focus {
     border: 2px solid @brand-success;
   }
 

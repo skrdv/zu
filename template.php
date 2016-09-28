@@ -1,9 +1,9 @@
 <?php
 
+
 function zu_preprocess_html(&$variables) {
   drupal_add_css('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic', array('type' => 'external'));
 }
-
 
 function zu_preprocess_page(&$vars) {
 
@@ -40,7 +40,11 @@ function zu_preprocess_node(&$vars) {
 
 function zu_form_alter(&$form, &$form_state, $form_id) {
 
-//    $form['input']['#attributes']['class'] = 'test';
+    if ($form_id == 'user-login') {
+
+        $form['user-login']['#attributes']['id'] = array("mod-search-searchword");
+
+    }
 
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
@@ -64,7 +68,7 @@ function zu_form_alter(&$form, &$form_state, $form_id) {
 }
 
 
-
+/*
 function zu_breadcrumb($variables) {
   $crumbs ='';
   $breadcrumb = $variables['breadcrumb'];
@@ -79,6 +83,7 @@ function zu_breadcrumb($variables) {
     return NULL;
   }
 }
+*/
 
 function zu_preprocess_file_entity(&$variables) {
   if ($variables['type'] == 'image') {
@@ -97,11 +102,11 @@ function zu_preprocess_file_entity(&$variables) {
 
 
 function zu_menu_tree__main_menu(array $variables) {
+    // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
   return '<ul class="main-nav">' . $variables['tree'] . '</ul>';
 }
 
 function zu_menu_tree__menu_front(array $variables) {
-    // $variables['tree'] = preg_replace('/class="[^"]*"/i', '', $variables['tree']);
     return '<ul class="main-nav nav-front">' . $variables['tree'] . '</ul>';
 }
 

@@ -4,6 +4,10 @@ var path = Drupal.settings.pathToTheme;
 
 	$( 'document' ).ready(function() {
 
+        //$('#work-school-node-form').find('input').addClass('form-control');
+
+
+
 		/*	Settings	*/
 		var usePreloader = true,
 			useCustomMainMenuAnimation = false,			//	please do not change
@@ -80,6 +84,8 @@ var path = Drupal.settings.pathToTheme;
 					buttons : {}
 				}
 			});
+
+
 
 		/*	Main Navigation	*/
 
@@ -207,6 +213,10 @@ var path = Drupal.settings.pathToTheme;
 
 		$( 'body' ).on( 'click', '.move-to-the-top', function(e) { e.preventDefault(); $('body,html').animate({scrollTop: 0}, 500); });
 
+
+
+
+        // Forms
 
 
 

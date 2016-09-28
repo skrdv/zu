@@ -8,6 +8,7 @@ screenshot = 'screenshot.png'
 
 stylesheets[all][] = library/css/animate.min.css
 stylesheets[all][] = library/css/jquery.mmenu.all.css
+stylesheets[all][] = library/css/jquery.fancybox.css
 stylesheets[all][] = library/css/jquery-ui.css
 stylesheets[all][] = library/css/helpers.css
 ;stylesheets[all][] = library/css/update.css
@@ -19,9 +20,8 @@ stylesheets[all][] = library/less/theme.less
 ;stylesheets[all][] = library/css/font-awesome.min.css
 ;stylesheets[all][] = bower_components/bootswatch/simplex/bootswatch.less
 ;stylesheets[all][] = bower_components/bootswatch/simplex/variables.less
-stylesheets[all][] = bower_components/fancybox/source/jquery.fancybox.css
-stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css
-stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css
+;stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css
+;stylesheets[all][] = bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css
 
 
 scripts[] = library/js/jquery-1.11.2.min.js
@@ -37,11 +37,11 @@ scripts[] = library/js/tweetie.min.js
 scripts[] = library/js/main.js
 scripts[] = library/js/update.js
 scripts[] = library/js/bootstrap.min.js
-scripts[] = bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js
-scripts[] = bower_components/fancybox/source/jquery.fancybox.pack.js
-scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js
-scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-media.js
-scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js
+scripts[] = library/js/jquery.fancybox.pack.js
+;scripts[] = bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js
+;scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js
+;scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-media.js
+;scripts[] = bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js
 
 regions[toolbar]            = 'Header toolbar'
 regions[main_menu]          = 'Main menu'
