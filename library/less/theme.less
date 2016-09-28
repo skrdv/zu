@@ -31,6 +31,12 @@ ul.primary li a {
 	}
 }
 
+div.messages {
+  border-radius: 4px;
+}
+
+
+
 
 // Helpers
 .small {
@@ -59,6 +65,9 @@ ul.primary li a {
 }
 .margin-left-15 {
   margin-left: 15px;
+}
+.hidden {
+  display: none !important;
 }
 .visible {
 	display: block !important;
@@ -145,8 +154,8 @@ legend {
 // Header 
 #header {
 	.container {
-		//height: 110px;
-		background: @color-white;
+      padding-bottom: 5px;
+      background: @color-white;
 	}
 	.site-logo {
 		display: block;
@@ -548,6 +557,8 @@ nav.header-nav {
 
 
 
+
+
 // Front
 .page-node.front {
 	.content {
@@ -565,40 +576,6 @@ nav.header-nav {
       }
     }
 }
-
-
-
-// News
-.view-news-school {
-  .news-item {
-    margin-bottom: 15px;
-    &-content {
-      padding-left: 0;
-    }
-    &-title {
-      margin: 0;
-      a:hover,
-      a:focus {
-        text-decoration: none;
-      }
-    }
-    &-date {
-      margin-bottom: 5px;
-    }
-  }
-}
-
-.node-news-school {
-  .field-type-image {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
-
-
 
 
 
@@ -646,6 +623,104 @@ nav.header-nav {
 #edit-field-institution-number {
   margin-right: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+// News
+.view-news-school {
+  .news-item {
+    margin-bottom: 15px;
+    &-content {
+      padding-left: 0;
+    }
+    &-title {
+      margin: 0;
+      a:hover,
+      a:focus {
+        text-decoration: none;
+      }
+    }
+    &-date {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.node-news-school {
+  .field-type-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+
+
+
+
+// Works School
+.view-works-school {
+  .work-item {
+    border: 1px solid #dce4ec;
+    margin-bottom: 15px;
+    .title {
+      height: 60px;
+      margin: 0;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .details {
+      height: 80px;
+    }
+    figure {
+      img,
+      audio,
+      video {
+        width: 100%;
+      }
+      img {
+        height: auto;
+      }
+    }
+    .file {
+      min-height: 250px;
+      background: rgb(250, 250, 250);
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .file-audio {
+      background-image: url(../svg/file-audio-o.svg);
+    }
+    .file-video {
+      background-image: url(../svg/file-video-o.svg);
+    }
+    .file-image {
+      background-image: url(../svg/file-image-o.svg);
+    }
+    .file-document {
+      background-image: url(../svg/file-text-o.svg);
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 
