@@ -60,7 +60,7 @@ if ( isset($node->field_school_sidebar['und'][0]['value']) || isset($node->field
 
 <?php }elseif($sidebar == '2'){ // Right sidebar ?>
 
-	<section id="main" class="padding-top-1">
+	<section id="main">
 		<div class="container">
 			<div class="col-lg-9 col-md-8">
 				<?php  if($page['content']):?>
@@ -84,7 +84,7 @@ if ( isset($node->field_school_sidebar['und'][0]['value']) || isset($node->field
 <?php }else{//full width ?>
 
 	<?php  if($page['content']):?>
-		<section id="main" class="padding-top-1">
+		<section id="main">
 			<div class="container">
 				<div class="col-lg-12">
 					<?php

@@ -466,6 +466,7 @@ nav.header-nav {
 			}
 			p {
 				display: inline-block;
+                margin-top: 5px;
 				margin-bottom: 0;
 				line-height: 16px;
 				text-align: right;
@@ -527,7 +528,7 @@ nav.header-nav {
 		background: url(../img/breadcrumbs.png) no-repeat center center;
 	}
 	.title {
-		margin: 8px 0 8px 15px;
+		margin: 8px 0;
 		color: @color-white;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -602,30 +603,86 @@ nav.header-nav {
   }
 }
 
-#edit-field-user-name,
-#edit-field-user-surname {
+#edit-profile-profile-field-profile-division,
+#edit-profile-profile-field-profile-onecollective {
   width: 49%;
   display: inline-block !important;
 }
 
-#edit-field-user-name {
+#edit-profile-profile-field-profile-division {
   margin-right: 15px;
 }
 
-#edit-field-institution-name,
-#edit-field-institution-number,
-#edit-field-institution-class {
+#edit-profile-profile-field-profile-image {
+  input {
+    display: inline-block !important;
+    margin-right: 15px;
+  }
+}
+
+#edit-profile-profile-field-profile-name,
+#edit-profile-profile-field-profile-sname {
+  width: 49%;
+  display: inline-block !important;
+}
+
+#edit-profile-profile-field-profile-name {
+  margin-right: 15px;
+}
+
+#edit-profile-profile-field-collective-name,
+#edit-profile-profile-field-collective-count,
+#edit-profile-profile-field-collective-age {
   width: 32%;
   display: inline-block !important;
 }
 
-#edit-field-institution-name,
-#edit-field-institution-number {
+#edit-profile-profile-field-collective-name,
+#edit-profile-profile-field-collective-count {
   margin-right: 15px;
 }
 
+#profile-profile-field-profile-birthday-add-more-wrapper {
+  .date-day,
+  .date-month,
+  .date-year {
+    margin-right: 15px;
+  }
+}
 
+#edit-profile-profile-field-profile-age {
+  display: none;
+}
 
+#edit-profile-profile-field-institution-school,
+#edit-profile-profile-field-institution-number,
+#edit-profile-profile-field-institution-class {
+  width: 32%;
+  display: inline-block !important;
+}
+
+#edit-profile-profile-field-institution-school,
+#edit-profile-profile-field-institution-number {
+  margin-right: 15px;
+}
+
+#edit-profile-profile-field-institution-students,
+#edit-profile-profile-field-institution-course,
+#edit-profile-profile-field-institution-faculty {
+  width: 32%;
+  display: inline-block !important;
+}
+
+#edit-profile-profile-field-institution-students,
+#edit-profile-profile-field-institution-course {
+  margin-right: 15px;
+}
+
+#edit-profile-profile-field-profile-city,
+#edit-autoassignrole-user,
+#edit-account {
+  width: 50%;
+}
 
 
 
@@ -670,8 +727,13 @@ nav.header-nav {
 // Works School
 .view-works-school {
   .work-item {
-    border: 1px solid #dce4ec;
-    margin-bottom: 15px;
+  	max-width: 250px;
+    margin-top: 15px;
+    border: 2px solid #dce4ec;
+    transition: all ease 0.5s;
+    &:hover {
+    	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+		}
     .title {
       height: 60px;
       margin: 0;
@@ -680,23 +742,34 @@ nav.header-nav {
     }
     .details {
       height: 80px;
+      border-top: 2px solid #dce4ec;
     }
-    figure {
-      img,
-      audio,
-      video {
-        width: 100%;
-      }
-      img {
-        height: auto;
-      }
+    .author {
+    	padding: 10px;
+    	font-size: @font-size-h4;
+    }
+    audio,
+    video,
+    .content {
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    }
+    .content {
+    	text-align: center;
+    	img {
+    		width: 50%;
+      	height: auto;
+     }
     }
     .file {
+    	position: relative;
       min-height: 250px;
-      background: rgb(250, 250, 250);
-      background-size: 75%;
+      background: rgb(180, 180, 180);
+      background-size: 25%;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: 10px 10px;
     }
     .file-audio {
       background-image: url(../svg/file-audio-o.svg);
@@ -709,7 +782,7 @@ nav.header-nav {
     }
     .file-document {
       background-image: url(../svg/file-text-o.svg);
-      img {
+      img, a {
         display: none;
       }
     }
@@ -717,8 +790,57 @@ nav.header-nav {
 }
 
 
+.work-page-content {
+  .views-field {
+    font-size: @font-size-h4;
 
+    .views-label,
+    .field-content {
+      display: inline-block;
+    }
 
+    &-title .field-content {
+      margin-top: 15px;
+    }
+
+    &-field-school-file {
+      margin: 15px 0;
+    }
+
+  }
+}
+
+.work-page-block {
+  margin: 15px 0;
+
+  .views-field {
+    display: inline-block;
+    padding: 5px 0;
+    font-size: @font-size-h4;
+
+    .views-label,
+    .field-content {
+      display: inline-block;
+    }
+
+    &-field-profile-image {
+      width: 100%;
+      text-align: left;
+    }
+
+    &-field-profile-age {
+      width: 100%;
+      border-top: 2px solid @gray-light;
+      border-bottom: 2px solid @gray-light;
+    }
+
+    &-field-collective-age {
+      width: 100%;
+      border-bottom: 2px solid @gray-light;
+    }
+
+  }
+}
 
 
 
@@ -805,6 +927,12 @@ nav.header-nav {
     }
   }
 
+  .view-works-school {
+  	.work-item {
+  		margin: 15px auto;
+  	}
+	}
+
 }
 
 /* Tablet */
@@ -876,15 +1004,13 @@ nav.header-nav {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 	#header {
-		height: 110px;
-
+		// height: 110px;
 	}
 
     #nav {
-      .nav-school,
-      .nav-students {
-        // display: block;
-      }
+    	.main-nav li a {
+    		padding: 15px 10px;
+    	}
     }
 
 }
@@ -893,14 +1019,11 @@ nav.header-nav {
 @media only screen and (min-width: 1200px) {
 
   #header {
-    height: 110px;
+    // height: 110px;
   }
 
   #nav {
-    .nav-school,
-    .nav-students {
-      // display: block;
-    }
+
   }
 
 }

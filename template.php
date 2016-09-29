@@ -33,9 +33,13 @@ function zu_preprocess_page(&$vars) {
 
 function zu_preprocess_node(&$vars) {
   unset($vars['content']['links']['statistics']['#links']['statistics_counter']['title']);
-  if ($vars['node']->type == 'work_school' && $vars['view_mode'] == 'page_1') {
-        $vars['theme_hook_suggestions'][] = 'node__work_school_page_1';
-      } 
+  
+//  if ($vars['node']->type == 'work_school' && $vars['view_mode'] == 'work_school') {
+//        $vars['theme_hook_suggestions'][] = 'node__work_school_work_school';
+//      }
+//    if ($vars['node']->type == 'work_school' && $vars['view_mode'] == 'block_1') {
+//        $vars['theme_hook_suggestions'][] = 'node__work_school_block_1';
+//    }
 }
 
 function zu_form_alter(&$form, &$form_state, $form_id) {
