@@ -603,6 +603,11 @@ nav.header-nav {
   }
 }
 
+#edit-profile-profile-field-profile-age {
+  display: none;
+}
+
+/*
 #edit-profile-profile-field-profile-division,
 #edit-profile-profile-field-profile-onecollective {
   width: 49%;
@@ -650,9 +655,7 @@ nav.header-nav {
   }
 }
 
-#edit-profile-profile-field-profile-age {
-  display: none;
-}
+
 
 #edit-profile-profile-field-institution-school,
 #edit-profile-profile-field-institution-number,
@@ -683,7 +686,7 @@ nav.header-nav {
 #edit-account {
   width: 50%;
 }
-
+*/
 
 
 
@@ -691,7 +694,7 @@ nav.header-nav {
 
 
 // News
-.view-news-school {
+.news-list {
   .news-item {
     margin-bottom: 15px;
     &-content {
@@ -710,7 +713,8 @@ nav.header-nav {
   }
 }
 
-.node-news-school {
+.node-news-school,
+.node-news-students {
   .field-type-image {
     img {
       width: 100%;
@@ -724,8 +728,9 @@ nav.header-nav {
 
 
 
-// Works School
-.view-works-school {
+// Works
+.view-works-school,
+.view-works-students {
   .work-item {
   	max-width: 250px;
     margin-top: 15px;
@@ -790,6 +795,8 @@ nav.header-nav {
 }
 
 
+
+
 .work-page-content {
   .views-field {
     font-size: @font-size-h4;
@@ -830,7 +837,6 @@ nav.header-nav {
 
     &-field-profile-age {
       width: 100%;
-      border-top: 2px solid @gray-light;
       border-bottom: 2px solid @gray-light;
     }
 
