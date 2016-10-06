@@ -37,7 +37,7 @@ if($block->region == 'main_menu' ||
 
 }elseif($block->region == 'footer'){
 
-	$out .= '<div class="col-lg-3"><aside class="'.$classes.'"'.$attributes.'>';
+	$out .= '<div class=""><aside class="'.$classes.'"'.$attributes.'>';
 	if($block->subject):
 		$out .= '<h4 class="widget-title">'.$block->subject.'</h4>';
 	endif;

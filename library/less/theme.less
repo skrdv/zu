@@ -90,6 +90,11 @@ div.messages {
 
 
 
+
+
+
+
+
 .item-list {
     .pager {
 		margin: 15px 0;
@@ -186,11 +191,23 @@ legend {
 }
 
 
+// Search
+#mod-search-searchword {
+  display: inline-block !important;
+  width: 70%;
+}
 
+#edit-submit {
+  vertical-align: baseline;
+}
 
+#search-form {
+  #edit-keys {
+    display: inline-block;
+    width: 90%;
 
-
-
+  }
+}
 
 
 // Header 
@@ -522,6 +539,7 @@ nav.header-nav {
 			}	
 		}
 		p {
+            margin-top: 5px;
 			line-height: 12px;
 			color: @brand-primary;
 		}
@@ -540,8 +558,8 @@ nav.header-nav {
 		li {
 			padding-left: 32px;
 			display: inline-block;
-    	vertical-align: top;
-    	line-height: 12px;
+    	    vertical-align: top;
+    	    line-height: 12px;
 			background: url(/sites/all/themes/zu/library/img/comitet.png) no-repeat left top;
 			&:nth-child(1) {
 				width: 17%;
@@ -550,14 +568,24 @@ nav.header-nav {
 				width: 22%;
 			}
 			&:nth-child(3) {
-				width: 27%;
+				width: 28%;
 			}
 			&:nth-child(4) {
 				width: 21%;
 			}
 		}
-
 	}
+
+    .partners {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+        }
+      }
+    }
 }
 
 
@@ -832,6 +860,10 @@ nav.header-nav {
       img, a {
         display: none;
       }
+    }
+    iframe.media-youtube-player {
+      width: 246px !important;
+      height: 145px !important;
     }
   }
 }
