@@ -8,7 +8,7 @@ $image_uri  = $node->field_school_file['und'][0]['uri'];
     <div class="container">
         <div class="col-lg-9 col-md-8">
             <?php print views_embed_view('works_school','page_1', $node->nid); ?>
-            <?php print render($content['comments']);?>
+            <?php // print render($content['comments']);?>
         </div>
         <div class="col-lg-3 col-md-4">
             <div class="sidebar">

@@ -13,13 +13,18 @@
             <img src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
           </a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <?php if($page['toolbar']): ?>
-            <?php print render($page['toolbar']); ?>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <?php if($page['toolbar_left']): ?>
+            <?php print render($page['toolbar_left']); ?>
+          <?php endif;  ?>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <?php if($page['toolbar_right']): ?>
+            <?php print render($page['toolbar_right']); ?>
           <?php endif;  ?>
         </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
-          <a class="cds-logo" href="/" title="">
+          <a class="cds-logo" href="http://www.cds.spb.ru/" target="_blank" title="">
             <img src="/sites/all/themes/zu/library/img/cds_logo.png" alt="">
           </a>
         </div>
@@ -43,6 +48,9 @@
           <?php endif; ?>
           <?php if($page['menu_students']): ?>
             <?php print render($page['menu_students']); ?>
+          <?php endif; ?>
+          <?php if($page['menu_moderation']): ?>
+            <?php print render($page['menu_moderation']); ?>
           <?php endif; ?>
           <?php if($page['user_menu']): ?>
             <?php print render($page['user_menu']); ?>

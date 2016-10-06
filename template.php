@@ -126,6 +126,10 @@ function zu_menu_tree__user_menu(array $variables) {
     return '<ul class="main-nav nav-user">' . $variables['tree'] . '</ul>';
 }
 
+function zu_menu_tree__menu_moderation(array $variables) {
+    return '<ul class="main-nav nav-moderation">' . $variables['tree'] . '</ul>';
+}
+
 function zu_menu_tree__menu_footer_menu($variables) {
   $str  = '';
   $str .= '<ul class="footer-menu">';

@@ -35,7 +35,17 @@ div.messages {
   border-radius: 4px;
 }
 
+.content strong {
+  //font-weight: normal;
+}
 
+.content,
+.view-content {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
 
 
 // Helpers
@@ -78,6 +88,31 @@ div.messages {
   height: auto;
 }
 
+
+
+.item-list {
+    .pager {
+		margin: 15px 0;
+		padding-top: 15px;
+		li {
+			margin: 0;
+		}
+		li > a, 
+		li > span {
+			border-radius: 0;
+		}
+	}
+}
+
+.ui-front.media-wrapper {
+	z-index: 999;
+}
+
+
+.views-field-field-students-like,
+.views-field-field-school-like {
+	margin-bottom: 15px;
+}
 
 // Forms
 legend {
@@ -149,6 +184,13 @@ legend {
   right: 0;
   bottom: 0;
 }
+
+
+
+
+
+
+
 
 
 // Header 
