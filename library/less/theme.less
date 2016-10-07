@@ -92,6 +92,14 @@ div.messages {
 
 
 
+body.page-search {
+  .messages.error {
+    display: none !important;
+  }
+}
+
+
+
 
 
 
@@ -547,7 +555,7 @@ nav.header-nav {
 
 	.cds-logo {
 		display: block;
-    margin: 35px 0;
+        margin: 35px 0 20px 0;
 	}
 
 	.founders {
@@ -812,7 +820,7 @@ nav.header-nav {
     .title {
       height: 60px;
       margin: 0;
-      padding: 10px;
+      padding: 5px 10px;
       font-weight: bold;
     }
     .details {
@@ -833,14 +841,10 @@ nav.header-nav {
     }
     .content {
     	text-align: center;
-    	img {
-    		width: 50%;
-      	height: auto;
-     }
     }
     .file {
     	position: relative;
-      min-height: 250px;
+      min-height: 246px;
       background: rgb(180, 180, 180);
       background-size: 25%;
       background-repeat: no-repeat;
@@ -856,40 +860,54 @@ nav.header-nav {
       background-image: url(../svg/file-image-o.svg);
     }
     .file-document {
-      background-image: url(../svg/file-text-o.svg);
+      background-image: url(../svg/file-word-o.svg);
       img, a {
         display: none;
       }
     }
-    iframe.media-youtube-player {
-      width: 246px !important;
-      height: 145px !important;
-    }
+
+  }
+}
+
+.work-content {
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .field-label {
+    font-weight: normal;
+  }
+  .likebtn {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 }
 
 
-
-
-.work-page-content {
-  .views-field {
-    font-size: @font-size-h4;
-
-    .views-label,
-    .field-content {
-      display: inline-block;
-    }
-
-    &-title .field-content {
-      margin-top: 15px;
-    }
-
-    &-field-school-file {
-      margin: 15px 0;
-    }
-
-  }
-}
+//.work-page-content {
+  //.views-field {
+  //  font-size: @font-size-h4;
+  //
+  //  .views-label,
+  //  .field-content {
+  //    display: inline-block;
+  //  }
+  //
+  //  &-title .field-content {
+  //    margin-top: 15px;
+  //  }
+  //
+  //  &-field-school-file {
+  //    margin: 15px 0;
+  //  }
+  //
+  //}
+  //.views-field-field-school-file {
+  //  .file-document {
+  //    width: 800px;
+  //  }
+  //}
+//}
 
 .work-page-block {
   margin: 15px 0;

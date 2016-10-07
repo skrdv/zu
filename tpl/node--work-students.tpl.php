@@ -1,25 +1,55 @@
-<?php
-$author = $node->field_students_author['und'][0]['value'];
-$image_uri  = $node->field_students_file['und'][0]['uri'];
-//print theme('image', array('path' => $image_uri, 'style_name' => 'image_730x550', 'attributes'=>array('alt'=>$title,'class'=>'img-responsive')));
-?>
+<?php if(!$page){?>
 
-<section id="main">
-    <div class="container">
-        <div class="col-lg-9 col-md-8">
-            <?php print views_embed_view('works_students','page_1', $node->nid); ?>
-            <?php print render($content['comments']);?>
-        </div>
-        <div class="col-lg-3 col-md-4">
-            <div class="sidebar">
-                <?php print views_embed_view('works_students','block_1', $node->nid); ?>
+    <div class="col-sm-6 col-md-6 col-lg-4">
+        <div class="work-item">
+            <h4 class="title">
+                <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+            </h4>
+            <figure>
+                <?php print render($content['field_students_file']); ?>
+            </figure>
+            <div class="details">
+                <div class="author">
+                    <?php print render($content['field_students_author']); ?>
+                </div>
+                <div class="like">
+                    <?php print render($content['field_students_like']); ?>
+                </div>
             </div>
         </div>
     </div>
-</section>
 
-<?php //print_r($node); ?>
+<?php }else{?>
+
+    <section id="main">
+        <div class="container">
+            <div class="col-lg-9 col-md-8">
+                <div class="work-content">
+                    <h2 class="title">
+                        <?php print $title; ?>
+                    </h2>
+                    <div class="nomination">
+                        <?php print render($content['field_students_nominations']); ?>
+                    </div>
+                    <div class="likebtn">
+                        <?php print render($content['field_students_like']); ?>
+                    </div>
+                    <div class="file">
+                        <?php print render($content['field_students_file']); ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="sidebar">
+                    <div class="work-author">
+                    <?php print views_embed_view('works_students','block_1', $node->nid); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php } ?>
 
 
-
-
+<?php // print_r($node); ?>
