@@ -5,9 +5,10 @@
             <h4 class="title">
                 <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
             </h4>
-            <figure>
+            <div class="work-file">
                 <?php print render($content['field_students_file']); ?>
-            </figure>
+                <a class="link" href="<?php print $node_url; ?>"></a>
+            </div>
             <div class="details">
                 <div class="author">
                     <?php print render($content['field_students_author']); ?>

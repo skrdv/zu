@@ -807,65 +807,79 @@ nav.header-nav {
 
 
 // Works
-.view-works-school,
-.view-works-students {
-  .work-item {
-  	max-width: 250px;
-    margin-top: 15px;
-    border: 2px solid #dce4ec;
-    transition: all ease 0.5s;
-    &:hover {
-    	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-		}
-    .title {
-      height: 60px;
-      margin: 0;
-      padding: 5px 10px;
-      font-weight: bold;
+.work-item {
+  max-width: 250px;
+  margin-top: 15px;
+  border: 2px solid #dce4ec;
+  transition: all ease 0.5s;
+  &:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .title {
+    height: 60px;
+    margin: 0;
+    padding: 3px 10px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .work-file {
+    position: relative;
+    border-top: 2px solid #dce4ec;
+    border-bottom: 2px solid #dce4ec;
+    .link {
+      display: block;
+      width: 246px;
+      height: 214px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
-    .details {
-      height: 80px;
-      border-top: 2px solid #dce4ec;
+  }
+  .details {
+    height: 80px;
+  }
+  .author {
+    padding: 5px 10px;
+    font-size: @font-size-h4;
+    line-height: @font-size-h4;
+  }
+  .like {
+    margin-left: 10px;
+  }
+  audio,
+  video,
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+  }
+  .file {
+    position: relative;
+    min-height: 246px;
+    background: white;
+    background-repeat: no-repeat;
+  }
+  .file-audio {
+    background-image: url(../svg/file-audio-o.svg);
+    background-size: 50%;
+    background-position: center;
+  }
+  .file-video {
+    background-image: url(../svg/file-video-o.svg);
+    background-size: 25%;
+    background-position: center 20px;
+  }
+  .file-document {
+    background-image: url(../svg/file-word-o.svg);
+    background-size: 50%;
+    background-position: center;
+    img {
+      display: none;
     }
-    .author {
-    	padding: 10px;
-    	font-size: @font-size-h4;
-    }
-    audio,
-    video,
-    .content {
-    	position: absolute;
-    	bottom: 0;
-    	left: 0;
-    	width: 100%;
-    }
-    .content {
-    	text-align: center;
-    }
-    .file {
-    	position: relative;
-      min-height: 246px;
-      background: rgb(180, 180, 180);
-      background-size: 25%;
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-    }
-    .file-audio {
-      background-image: url(../svg/file-audio-o.svg);
-    }
-    .file-video {
-      background-image: url(../svg/file-video-o.svg);
-    }
-    .file-image {
-      background-image: url(../svg/file-image-o.svg);
-    }
-    .file-document {
-      background-image: url(../svg/file-word-o.svg);
-      img, a {
-        display: none;
-      }
-    }
-
   }
 }
 
@@ -883,33 +897,7 @@ nav.header-nav {
   }
 }
 
-
-//.work-page-content {
-  //.views-field {
-  //  font-size: @font-size-h4;
-  //
-  //  .views-label,
-  //  .field-content {
-  //    display: inline-block;
-  //  }
-  //
-  //  &-title .field-content {
-  //    margin-top: 15px;
-  //  }
-  //
-  //  &-field-school-file {
-  //    margin: 15px 0;
-  //  }
-  //
-  //}
-  //.views-field-field-school-file {
-  //  .file-document {
-  //    width: 800px;
-  //  }
-  //}
-//}
-
-.work-page-block {
+.work-author {
   margin: 15px 0;
 
   .views-field {
