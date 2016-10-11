@@ -33,14 +33,14 @@ function zu_preprocess_page(&$vars) {
 
 function zu_preprocess_node(&$vars) {
   unset($vars['content']['links']['statistics']['#links']['statistics_counter']['title']);
-  
-//  if ($vars['node']->type == 'work_school' && $vars['view_mode'] == 'work_school') {
-//        $vars['theme_hook_suggestions'][] = 'node__work_school_work_school';
-//      }
-//    if ($vars['node']->type == 'work_school' && $vars['view_mode'] == 'block_1') {
-//        $vars['theme_hook_suggestions'][] = 'node__work_school_block_1';
-//    }
+
+    // Add css class "node--NODETYPE--VIEWMODE" to nodes
+    $vars['classes_array'][] = 'node--' . $vars['type'] . '--' . $vars['view_mode'];
+
+    // Make "node--NODETYPE--VIEWMODE.tpl.php" templates available for nodes
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__' . $vars['view_mode'];
 }
+
 
 function zu_form_alter(&$form, &$form_state, $form_id) {
 
@@ -71,6 +71,10 @@ function zu_form_alter(&$form, &$form_state, $form_id) {
 
 }
 
+function zu_preprocess_views_view_table(&$vars) 
+{
+    $vars['classes_array'][] = 'table table-striped table-hover';
+}
 
 /*
 function zu_breadcrumb($variables) {

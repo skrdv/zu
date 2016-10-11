@@ -33,19 +33,22 @@ ul.primary li a {
 
 div.messages {
   border-radius: 4px;
+  &-error {
+    display: none;
+  }
 }
 
 .content strong {
   //font-weight: normal;
 }
 
-.content,
-.view-content {
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
+//.content,
+//.view-content {
+//	img {
+//		width: 100%;
+//		height: auto;
+//	}
+//}
 
 
 // Helpers
@@ -425,6 +428,13 @@ legend {
 
 	}
 
+    .nav-user {
+      .main-nav {
+        li a {
+          text-transform: none;
+        }
+      }
+    }
 }
 
 nav.header-nav {
@@ -815,6 +825,10 @@ nav.header-nav {
   &:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
   .title {
     height: 60px;
     margin: 0;
@@ -858,6 +872,7 @@ nav.header-nav {
     text-align: center;
   }
   .file {
+	  overflow: hidden;
     position: relative;
     min-height: 246px;
     background: white;
@@ -884,6 +899,10 @@ nav.header-nav {
 }
 
 .work-content {
+  img {
+    width: 100%;
+    height: auto;
+  }
   .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -899,7 +918,10 @@ nav.header-nav {
 
 .work-author {
   margin: 15px 0;
-
+  img {
+    width: 100%;
+    height: auto;
+  }
   .views-field {
     display: inline-block;
     padding: 5px 0;
