@@ -41,6 +41,7 @@
                     <div class="file">
                         <?php print render($content['field_school_file']); ?>
                     </div>
+                    <?php print render($content['comments']);?>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4">
