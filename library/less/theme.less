@@ -94,32 +94,78 @@ div.messages {
 
 
 
-
+// Massages
 .messages.error {
-	display: none !important;
+	//display: none !important;
+}
+
+
+
+#reset-button-wrapper {
+	width: 100%;
 }
 
 
 
 
-
+// Pager
 .item-list {
     .pager {
 		margin: 15px 0;
 		padding-top: 15px;
 		li {
 			margin: 0;
+			padding: 0;
 		}
 		li > a, 
 		li > span {
+			padding: 5px 12px;
 			border-radius: 0;
+		}
+		.pager-current {
+			width: 30px;
+			display: inline-block;
 		}
 	}
 }
 
-.ui-front.media-wrapper {
+
+// Media browser
+.ui-dialog {
+	border-radius: 0;
+	border: none;
 	z-index: 999;
+	.ui-dialog-titlebar {
+		border-radius: 0;
+		border: 0;
+	}
 }
+
+.ui-widget-overlay {
+	background: black;
+	opacity: .8;
+}
+
+#edit-upload-upload {
+	width: 80%;
+	display: inline-block;
+}
+
+#edit-upload-upload-button {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+#media-browser-tabset {
+	border-radius: 0;
+	border: 0;
+}
+
+
+
+
+
 
 
 .views-field-field-students-like,
@@ -784,24 +830,59 @@ nav.header-nav {
 
 
 
+//Juri pages
+#node-8,
+#node-14 {
+	img {
+		margin-right: 15px;
+	}
+}
+
+
+
 // News
 .news-list {
   .news-item {
-    margin-bottom: 15px;
-    &-content {
+    margin-bottom: 30px;
+	p {
+		margin: 0;
+	  }
+    .content {
       padding-left: 0;
     }
-    &-title {
+    .title {
       margin: 0;
       a:hover,
       a:focus {
         text-decoration: none;
       }
     }
-    &-date {
+    .date {
       margin-bottom: 5px;
+		font-size: 80%;
+		color: gray;
     }
+	.more {
+
+	}
   }
+}
+
+.news-block {
+	.news-item {
+		margin-bottom: 15px;
+		p {
+			margin: 0;
+		}
+		.title {
+			font-weight: bold;
+		}
+		.date {
+			font-size: 80%;
+			color: gray;
+		}
+	}
+
 }
 
 .node-news-school,
@@ -1011,6 +1092,13 @@ nav.header-nav {
 	#footer {
 		.founders {
 			margin: 15px;
+			li {
+				width: 49% !important;
+				margin-bottom: 10px;
+			}
+		}
+		.partners {
+			margin: 0 15px;
 		}
 		.cds-logo {
 			margin: 5px 0;
