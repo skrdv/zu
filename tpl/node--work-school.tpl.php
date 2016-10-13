@@ -26,6 +26,11 @@
         <div class="container">
             <div class="col-lg-9 col-md-8">
                 <div class="work-content">
+                    <?php  if($user->uid==279): ?>
+                        <div class="moderation">
+                            <a href='/node/<?=$node->nid?>/edit'>Редактировать</a>
+                        </div>
+                    <?php endif; ?>
                     <h2 class="title">
                         <?php print $title; ?>
                     </h2>
