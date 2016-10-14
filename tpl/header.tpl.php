@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <a class="site-logo" href="/" title="<?php print $site_name; ?>">
-            <img src="/sites/all/themes/zu/library/img/zu_logo.png" alt="<?php print $site_name; ?>">
+            <img src="/sites/all/themes/zu/library/img/zu12_logo.png" alt="<?php print $site_name; ?>">
           </a>
         </div>
         <div class="col-xs-12 col-sm-6 hidden-md hidden-lg">

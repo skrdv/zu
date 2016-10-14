@@ -1,5 +1,8 @@
 <footer id="footer" role="contentinfo">
   <div class="container">
+    <div class="top-line">
+      <?php print render($page['footer_line']); ?>
+    </div>
     <div class="row">
       <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
         <a class="kira-all small" href="http://kira-all.ru" target="_blank">
