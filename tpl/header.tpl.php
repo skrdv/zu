@@ -4,9 +4,14 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <?php /*
           <a class="site-logo" href="/" title="<?php print $site_name; ?>">
             <img src="/sites/all/themes/zu/library/img/zu12_logo.png" alt="<?php print $site_name; ?>">
           </a>
+            */ ?>
+            <?php if($page['header_logo']): ?>
+                <?php print render($page['header_logo']); ?>
+            <?php endif;  ?>
         </div>
         <div class="col-xs-12 col-sm-6 hidden-md hidden-lg">
           <a class="cds-logo" href="/" title="">

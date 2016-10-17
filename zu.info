@@ -45,6 +45,7 @@ scripts[] = library/js/jquery.fancybox.pack.js
 
 regions[toolbar_left]       = 'Toolbar Left'
 regions[toolbar_right]      = 'Toolbar Right'
+regions[header_logo]        = 'Header Logo'
 regions[main_menu]          = 'Main menu'
 regions[user_menu]          = 'User menu'
 regions[menu_school]        = 'Menu School'
@@ -60,3 +61,4 @@ regions[footer_line]        = 'Footer Line'
 regions[bottom_page]        = 'Bottom page 404'
 regions[page_title_right]   = 'Page title right'
 regions[bottom_product]     = 'Bottom product'
+

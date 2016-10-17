@@ -38,8 +38,16 @@ div.messages {
   }
 }
 
-.content strong {
-  //font-weight: normal;
+a {
+	transition: all ease-in-out 0.5s;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+i {
+	transition: all ease-in-out 0.5s;
 }
 
 //.content,
@@ -290,15 +298,90 @@ legend {
 			font-size: 20px;
 			line-height: 25px;
 			&:nth-child(2) {
-				span {
+				a, span {
 					font-size: 14px;
     			vertical-align: top;
 				}
 			}
 			i {
 				width: 22px;
-				color: @color-02;
 				text-align: center;
+			}
+		}
+		&.school {
+			li {
+				color: @color-02;
+				a {
+					color: @color-02;
+				}
+				&:hover {
+					color: @color-03;
+					a {
+						color: @color-03;
+					}
+				}
+			}
+		}
+		&.students {
+			li {
+				color: @color-11;
+				a {
+					color: @color-11;
+				}
+				&:hover {
+					color: @color-12;
+					a {
+						color: @color-12;
+					}
+				}
+			}
+		}
+	}
+	.header-action {
+		margin: 10px 0 10px 0;
+		padding: 0;
+		li {
+			list-style: none;
+			font-size: 20px;
+			line-height: 30px;
+			i {
+				width: 25px;
+				text-align: center;
+			}
+			a {
+				color: @color-02;
+			}
+			a:hover {
+				text-decoration: none;
+				color: @color-black;
+			}
+		}
+		&.school {
+			li {
+				color: @color-02;
+				a {
+					color: @color-02;
+				}
+				&:hover {
+					color: @color-03;
+					a, i {
+						color: @color-03;
+					}
+				}
+			}
+		}
+		&.students {
+			li {
+				color: @color-11;
+				a {
+					color: @color-11;
+				}
+				&:hover {
+					color: @color-12;
+					a, i {
+						color: @color-12;
+					}
+				}
 			}
 		}
 	}
@@ -318,39 +401,28 @@ legend {
 				width: 30px;
 				text-align: center;
 				font-size: 14px;
-				border: 2px solid @color-02;
 				border-radius: 50%;
 				i {
 					line-height: 26px;
-					color: @color-02;
-				}
-			}
-			a:hover {
-				background: @color-02;
-				i {
-					color: #ffffff;
 				}
 			}
 		}
-	}
-	.header-action {
-		margin: 10px 0 10px 0;
-		padding: 0;
-		li {
-			list-style: none;
-			font-size: 20px;
-			line-height: 30px;
-			i {
-				width: 25px;
+		&.school {
+			li {
 				color: @color-02;
-				text-align: center;
+				a {
+					color: @color-02;
+					border: 2px solid @color-02;
+				}
 			}
-			a {
-				color: @color-02;
-			}
-			a:hover {
-				text-decoration: none;
-				color: @color-black;
+		}
+		&.students {
+			li {
+				color: @color-11;
+				a {
+					color: @color-11;
+					border: 2px solid @color-11;
+				}
 			}
 		}
 	}
@@ -642,7 +714,7 @@ nav.header-nav {
 			display: inline-block;
     	    vertical-align: top;
     	    line-height: 12px;
-			background: url(/sites/all/themes/zu/library/img/comitet.png) no-repeat left top;
+			background: url(../img/comitet.png) no-repeat left top;
 			&:nth-child(1) {
 				width: 17%;
 			}
@@ -695,6 +767,32 @@ nav.header-nav {
 	}
 }
 
+
+
+
+// Buttons
+.btn-school {
+	color: @color-white !important;
+	background: @color-00;
+	&:hover {
+		background: @color-02;
+	}
+}
+
+.btn-students {
+	color: @color-white !important;
+	background: @color-10;
+	&:hover {
+		background: @color-12;
+	}
+}
+
+
+
+
+
+
+// Colors
 .node-type-page-school,
 .node-type-news-school,
 .page-school-news,
@@ -707,6 +805,10 @@ nav.header-nav {
 	}
 	a {
 		color: @color-00;
+		&:hover,
+		&:focus {
+			color: @color-02;
+		}
 	}
 	.news-block {
 		.block-title,
@@ -728,34 +830,22 @@ nav.header-nav {
 	}
 	a {
 		color: @color-10;
+		&:hover,
+		&:focus {
+			color: @color-12;
+		}
 	}
 	.news-block {
 		.block-title,
 		.title a {
-			color: @color-11;
+			color: @color-10;
+			&:hover,
+			&:focus {
+				color: @color-12;
+			}
 		}
 	}
 }
-
-
-// Buttons
-.btn-school {
-	color: @color-white !important;
-	background: @color-00;
-	&:hover {
-		background: @color-02;
-	}
-}
-
-.btn-students {
-	color: @color-white !important;
-	background: @color-10;
-	&:hover {
-		background: @color-12;
-	}
-}
-
-
 
 
 
@@ -924,6 +1014,12 @@ nav.header-nav {
 			width: 100%;
 			height: auto;
 		}
+		a {
+			display: block;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
 	}
 	.col-lg-9.col-md-8 {
 		padding: 0;
@@ -974,7 +1070,7 @@ nav.header-nav {
 	.block-title {
 		font-size: 22px;
 		font-weight: bold;
-		margin: 10px 0;
+		margin: 10px 0 5px 0;
 		display: block;
 		text-transform: uppercase;
 	}
