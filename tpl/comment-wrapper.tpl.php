@@ -9,7 +9,7 @@
 <?php if($content['comment_form']): ?>
 <section class="padding-top-0">
 	<h3><?php print t('add a comment');?></h3>
-	<div style="margin-top:31.5px;">
+	<div>
 		<?php print str_replace('resizable', '', render($content['comment_form'])); ?>
 	</div>
 </section>

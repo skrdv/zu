@@ -109,12 +109,6 @@ i {
 
 
 
-#reset-button-wrapper {
-	width: 100%;
-}
-
-
-
 
 // Pager
 .item-list {
@@ -133,6 +127,9 @@ i {
 		.pager-current {
 			width: 30px;
 			display: inline-block;
+			span {
+				background-color: @color-white;
+			}
 		}
 	}
 }
@@ -418,6 +415,7 @@ legend {
 		}
 		&.students {
 			li {
+				margin-right: 22px;
 				color: @color-11;
 				a {
 					color: @color-11;
@@ -973,6 +971,23 @@ nav.header-nav {
   width: 50%;
 }
 */
+
+
+
+.comment-item {
+	.field-type-image {
+		width: 100px;
+	}
+	.field-type-text {
+		display: inline-block;
+		margin-right: 5px;
+		font-weight: bold;
+	}
+	.reply {
+		color: @color-white;
+
+	}
+}
 
 
 // Front
