@@ -974,6 +974,16 @@ nav.header-nav {
 
 
 
+// Comments
+.comment-form {
+	.form-item.form-type-item {
+		label,
+		.username {
+			display: none;
+		}
+	}
+}
+
 .comment-item {
 	.field-type-image {
 		width: 100px;
@@ -1220,6 +1230,9 @@ nav.header-nav {
     margin-top: 5px;
     margin-bottom: 10px;
   }
+	.file {
+		margin-top: 10px;
+	}
 }
 
 .work-author {
@@ -1229,9 +1242,9 @@ nav.header-nav {
     height: auto;
   }
   .views-field {
-    display: inline-block;
-    padding: 5px 0;
-    font-size: @font-size-h4;
+    //display: inline-block;
+    //padding: 5px 0;
+    //font-size: @font-size-h4;
 
     .views-label,
     .field-content {
@@ -1240,18 +1253,17 @@ nav.header-nav {
 
     &-field-profile-image {
       width: 100%;
+		margin-bottom: 5px;
       text-align: left;
     }
 
-    &-field-profile-age {
-      width: 100%;
-      border-bottom: 2px solid @gray-light;
-    }
+	  &-field-profile-name,
+	  &-field-profile-sname,
+	  &-field-collective-name {
+		  font-weight: bold;
+	  }
 
-    &-field-collective-age {
-      width: 100%;
-      border-bottom: 2px solid @gray-light;
-    }
+
 
   }
 }

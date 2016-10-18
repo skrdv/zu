@@ -34,14 +34,17 @@
                     <h2 class="title">
                         <?php print $title; ?>
                     </h2>
-                    <div class="category">
-                        <?php print render($content['field_school_category']); ?>
+                    <div class="likebtn">
+                        <?php print render($content['field_school_like']); ?>
                     </div>
                     <div class="nomination">
                         <?php print render($content['field_school_nominations']); ?>
                     </div>
-                    <div class="likebtn">
-                        <?php print render($content['field_school_like']); ?>
+                    <div class="category">
+                        <?php print render($content['field_school_category']); ?>
+                    </div>
+                    <div class="date">
+                        Дата: <?php print format_date($node->created, 'custom', 'd F Y');?>
                     </div>
                     <div class="file">
                         <?php print render($content['field_school_file']); ?>
