@@ -46,9 +46,6 @@ a {
 	}
 }
 
-i {
-	transition: all ease-in-out 0.5s;
-}
 
 //.content,
 //.view-content {
@@ -423,6 +420,28 @@ legend {
 				}
 			}
 		}
+		a:hover {
+			&.vk {
+				color: #507299;
+				border-color: #507299;
+			}
+			&.instagram {
+				color: #3897f0;
+				border-color: #3897f0;
+			}
+			&.youtube {
+				color: #cc181e;
+				border-color: #cc181e;
+			}
+			&.facebook {
+				color: #3b5998;
+				border-color: #3b5998;
+			}
+			&.odnoklassniki {
+				color: #f2720c;
+				border-color: #f2720c;
+			}
+		}
 	}
 }
 
@@ -706,21 +725,24 @@ nav.header-nav {
 		margin-top: 15px;
 		.header {
 			margin-bottom: 5px;
+			text-transform: uppercase;
 		}
 		li {
 			padding-left: 32px;
 			display: inline-block;
     	    vertical-align: top;
+			font-size: 80%;
+			text-transform: uppercase;
     	    line-height: 12px;
 			background: url(../img/comitet.png) no-repeat left top;
 			&:nth-child(1) {
-				width: 17%;
+				width: 16%;
 			}
 			&:nth-child(2) {
 				width: 22%;
 			}
 			&:nth-child(3) {
-				width: 28%;
+				width: 25%;
 			}
 			&:nth-child(4) {
 				width: 21%;
@@ -729,6 +751,9 @@ nav.header-nav {
 	}
 
     .partners {
+		.header {
+			text-transform: uppercase;
+		}
       ul {
         margin: 0;
         padding: 0;

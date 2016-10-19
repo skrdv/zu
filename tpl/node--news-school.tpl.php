@@ -12,7 +12,7 @@
             <?php print format_date($node->created, 'custom', 'd F Y');?>
         </div>
         <div class="body">
-            <?php print render($content); ?>
+            <?php print render($content['body']); ?>
         </div>
         <div class="share">
             <?php print render($content['uptolike']); ?>

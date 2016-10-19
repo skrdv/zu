@@ -18,7 +18,7 @@
         <div id="riva-preload"></div>
         <div id="riva-site-wrapper" class="page-wrap use-ltr wide-layout light-theme">
             <?php print $page_top; ?><?php print $page; ?><?php print $page_bottom; ?>
-            <div class="move-to-the-top"><i class="glyphicon glyphicon-triangle-top"></i></div>
+            <div class="move-to-the-top"><i class="fa fa-arrow-up"></i></div>
         </div>
     </div>
     <?php print $scripts; ?>
