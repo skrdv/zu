@@ -34,9 +34,6 @@
                     <h2 class="title">
                         <?php print $title; ?>
                     </h2>
-                    <div class="likebtn">
-                        <?php print render($content['field_school_like']); ?>
-                    </div>
                     <div class="nomination">
                         <?php print render($content['field_school_nominations']); ?>
                     </div>
@@ -45,6 +42,12 @@
                     </div>
                     <div class="date">
                         Дата: <?php print format_date($node->created, 'custom', 'd F Y');?>
+                    </div>
+                    <div class="likebtn">
+                        <?php print render($content['field_school_like']); ?>
+                    </div>
+                    <div class="share">
+                        <?php print render($content['uptolike']); ?>
                     </div>
                     <div class="file">
                         <?php print render($content['field_school_file']); ?>
