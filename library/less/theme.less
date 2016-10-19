@@ -244,6 +244,9 @@ legend {
 	position: fixed;
   right: 0;
   bottom: 0;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 
@@ -780,9 +783,10 @@ nav.header-nav {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-	.breadcrumbs {
-		display: none !important;
-		margin-left: 15px;
+	.breadcrumb {
+		margin: 0;
+		padding: 0;
+		background: none;
 		color: @color-white;
 		a {
 			color: @color-white;
@@ -818,6 +822,7 @@ nav.header-nav {
 // Colors
 .node-type-page-school,
 .node-type-news-school,
+.node-type-work-school,
 .page-school-news,
 .view-news-school,
 .page-school-works {
@@ -843,6 +848,7 @@ nav.header-nav {
 
 .node-type-page-students,
 .node-type-news-students,
+.node-type-work-students,
 .page-students-news,
 .view-news-students,
 .page-students-works {
@@ -900,7 +906,6 @@ nav.header-nav {
 }
 
 
-
 // Register
 #edit-autoassignrole-user {
   .fieldset-legend {
@@ -910,6 +915,20 @@ nav.header-nav {
   .form-item {
     margin: 0;
   }
+}
+
+#edit-profile-profile-field-profile-image {
+	.image-widget-data {
+		width: 100%;
+	}
+	#edit-profile-profile-field-profile-image-und-0-upload {
+		display: inline-block;
+		width: 50%;
+	}
+	#edit-profile-profile-field-profile-image-und-0-upload-button {
+		vertical-align: top;
+		margin-left: 5px;
+	}
 }
 
 #edit-profile-profile-field-profile-age {
@@ -1078,6 +1097,9 @@ nav.header-nav {
 
 
 
+
+
+
 //Juri pages
 #node-8,
 #node-14 {
@@ -1085,6 +1107,8 @@ nav.header-nav {
 		margin-right: 15px;
 	}
 }
+
+
 
 
 
@@ -1152,7 +1176,6 @@ nav.header-nav {
   }
 }
 
-
 .news-content {
 	.title {
 		margin: 0;
@@ -1172,6 +1195,8 @@ nav.header-nav {
 		padding: 3px;
 	}
 }
+
+
 
 
 
@@ -1287,31 +1312,30 @@ nav.header-nav {
     width: 100%;
     height: auto;
   }
-  .views-field {
-    //display: inline-block;
-    //padding: 5px 0;
-    //font-size: @font-size-h4;
-
-    .views-label,
-    .field-content {
-      display: inline-block;
-    }
-
-    &-field-profile-image {
-      width: 100%;
+	.field-name-field-profile-image {
 		margin-bottom: 5px;
-      text-align: left;
-    }
+	}
 
-	  &-field-profile-name,
-	  &-field-profile-sname,
-	  &-field-collective-name {
-		  font-weight: bold;
-	  }
+	.field-name-field-profile-name,
+	.field-name-field-profile-sname {
+		font-weight: bold;
+		display: inline-block;
+	}
 
+	.field-name-field-collective-name {
+		font-weight: bold;
+	}
 
+	.field-name-field-profile-age {
+		.field-label {
+			font-weight: bold;
+			display: inline-block;
+		}
+		.field-item {
+			display: inline-block;
+		}
+	}
 
-  }
 }
 
 

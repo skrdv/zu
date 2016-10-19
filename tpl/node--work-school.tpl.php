@@ -20,11 +20,38 @@
         </div>
     </div>
 
-<?php }else{?>
+<?php } else { ?>
+
+    <?php
+    function calculate_age($birthday) {
+        $birthday_timestamp = strtotime($birthday);
+        $age = date('Y') - date('Y', $birthday_timestamp);
+        if (date('md', $birthday_timestamp) > date('md')) {
+            $age--;
+        }
+        return $age;
+    }
+    $user = user_load($node->uid);
+    $profile = profile2_load_by_user($user, 'profile');
+    $profile_birthday = $profile->field_profile_birthday['und'][0]['value'];
+    $profile_age = calculate_age($profile_birthday);
+    $field_profile_image = drupal_render(field_view_field('profile2', $profile, 'field_profile_image', 'value'));
+    $field_profile_name = drupal_render(field_view_field('profile2', $profile, 'field_profile_name', 'value'));
+    $field_profile_sname = drupal_render(field_view_field('profile2', $profile, 'field_profile_sname', 'value'));
+    $field_collective_name = drupal_render(field_view_field('profile2', $profile, 'field_collective_name', 'value'));
+    $field_collective_count = drupal_render(field_view_field('profile2', $profile, 'field_collective_count', 'value'));
+    $field_collective_age = drupal_render(field_view_field('profile2', $profile, 'field_collective_age', 'value'));
+    $field_institution_school = drupal_render(field_view_field('profile2', $profile, 'field_institution_school', 'value'));
+    $field_institution_name = drupal_render(field_view_field('profile2', $profile, 'field_institution_name', 'value'));
+    $field_institution_number = drupal_render(field_view_field('profile2', $profile, 'field_institution_number', 'value'));
+    $field_institution_class = drupal_render(field_view_field('profile2', $profile, 'field_institution_class', 'value'));
+    $field_profile_teacher = drupal_render(field_view_field('profile2', $profile, 'field_profile_teacher', 'value'));
+    $field_profile_city = drupal_render(field_view_field('profile2', $profile, 'field_profile_city', 'value'));
+    ?>
 
     <section id="main">
         <div class="container">
-            <div class="col-lg-9 col-md-8">
+            <div class="col-lg-9 col-md-9">
                 <div class="work-content">
                     <?php  if($user->uid==279): ?>
                         <div class="moderation">
@@ -55,10 +82,26 @@
                     <?php print render($content['comments']);?>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-3">
                 <div class="sidebar">
                     <div class="work-author">
-                        <?php print views_embed_view('works_school','block_1', $node->nid); ?>
+                        <?php // print views_embed_view('works_school','block_1', $node->nid); ?>
+                        <?php print $field_profile_image; ?>
+                        <?php print $field_profile_name; ?>
+                        <?php print $field_profile_sname; ?>
+                        <div class="field field-name-field-profile-age">
+                            <div class="field-label">Возраст: </div>
+                            <div class="field-item even"><?php print $profile_age; ?> лет</div>
+                        </div>
+                        <?php print $field_collective_name; ?>
+                        <?php print $field_collective_count; ?>
+                        <?php print $field_collective_age; ?>
+                        <?php print $field_profile_city; ?>
+                        <?php print $field_institution_school; ?>
+                        <?php print $field_institution_name; ?>
+                        <?php print $field_institution_number; ?>
+                        <?php print $field_institution_class; ?>
+                        <?php print $field_profile_teacher; ?>
                     </div>
                 </div>
             </div>
