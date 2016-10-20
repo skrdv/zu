@@ -344,6 +344,7 @@ legend {
 			i {
 				width: 25px;
 				text-align: center;
+				transition: all ease-in-out 0.5s;
 			}
 			a {
 				color: @color-02;
@@ -1016,6 +1017,27 @@ nav.header-nav {
 }
 */
 
+// Profile
+.profile2-profile {
+	.field {
+		width: 50%;
+		height: 20px;
+		display: inline-block;
+	}
+	.field-name-field-profile-image {
+		width: 260px !important;
+		height: 260px !important;
+		margin-right: 10px;
+		float: left;
+	}
+	.field-name-field-profile-onecollective {
+		display: none;
+	}
+	.field-name-field-profile-name,
+	.field-name-field-profile-sname {
+		font-weight: bold;
+	}
+}
 
 
 // Comments
@@ -1289,7 +1311,7 @@ nav.header-nav {
   }
   .title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
   .field-label {
     font-weight: normal;
@@ -1303,11 +1325,15 @@ nav.header-nav {
 	}
 	.file {
 		margin-top: 10px;
+		video,
+		audio {
+			width: 100%;
+		}
 	}
 }
 
 .work-author {
-  margin: 15px 0;
+  //margin: 15px 0;
   img {
     width: 100%;
     height: auto;

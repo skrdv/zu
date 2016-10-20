@@ -23,7 +23,7 @@
 <?php if($page['content']): ?>
 	<section id="main">
     	<div class="container">
-        	<div class="col-lg-9 col-md-8">
+        	<div class="col-lg-9 col-md-9">
             <?php
 				if (!empty($tabs['#primary']) || !empty($tabs['#secondary'])):
 					print render($tabs);
@@ -33,7 +33,7 @@
 			<?php print render($page['content']); ?>
 
         	</div>
-        	<div class="col-lg-3 col-md-4">
+        	<div class="col-lg-3 col-md-3">
         		<?php if($page['sidebar_second']): ?>
         			<?php print render($page['sidebar_second']); ?>
         		<?php endif; ?>

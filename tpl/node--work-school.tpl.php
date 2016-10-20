@@ -31,10 +31,13 @@
         }
         return $age;
     }
-    $user = user_load($node->uid);
-    $profile = profile2_load_by_user($user, 'profile');
-    $profile_birthday = $profile->field_profile_birthday['und'][0]['value'];
-    $profile_age = calculate_age($profile_birthday);
+    $author = user_load($node->uid);
+    $profile = profile2_load_by_user($author, 'profile');
+    $field_profile_birthday = drupal_render(field_view_field('profile2', $profile, 'field_profile_birthday', 'value'));
+    if(!empty($field_profile_birthday)) {
+        $profile_birthday = $profile->field_profile_birthday['und'][0]['value'];
+        $profile_age = calculate_age($profile_birthday);
+    }
     $field_profile_image = drupal_render(field_view_field('profile2', $profile, 'field_profile_image', 'value'));
     $field_profile_name = drupal_render(field_view_field('profile2', $profile, 'field_profile_name', 'value'));
     $field_profile_sname = drupal_render(field_view_field('profile2', $profile, 'field_profile_sname', 'value'));
@@ -68,7 +71,7 @@
                         <?php print render($content['field_school_category']); ?>
                     </div>
                     <div class="date">
-                        Дата: <?php print format_date($node->created, 'custom', 'd F Y');?>
+                        <?php print format_date($node->created, 'custom', 'd F Y');?>
                     </div>
                     <div class="likebtn">
                         <?php print render($content['field_school_like']); ?>
@@ -89,13 +92,15 @@
                         <?php print $field_profile_image; ?>
                         <?php print $field_profile_name; ?>
                         <?php print $field_profile_sname; ?>
+                        <?php if(isset($profile_age)) { ?>
                         <div class="field field-name-field-profile-age">
                             <div class="field-label">Возраст: </div>
                             <div class="field-item even"><?php print $profile_age; ?> лет</div>
                         </div>
+                        <?php } ?>
                         <?php print $field_collective_name; ?>
-                        <?php print $field_collective_count; ?>
                         <?php print $field_collective_age; ?>
+                        <?php print $field_collective_count; ?>
                         <?php print $field_profile_city; ?>
                         <?php print $field_institution_school; ?>
                         <?php print $field_institution_name; ?>
