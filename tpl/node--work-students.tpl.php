@@ -58,6 +58,7 @@
                 <div class="work-content">
                     <?php if($user->uid==279): ?>
                         <div class="moderation">
+                            <?php print render($content['field_students_moderation']); ?>
                             <a href='/node/<?=$node->nid?>/edit'>Редактировать</a>
                         </div>
                     <?php endif; ?>
