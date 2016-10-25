@@ -823,8 +823,10 @@ nav.header-nav {
 // Colors
 .node-type-page-school,
 .node-type-news-school,
+.node-type-gallery-school,
 .node-type-work-school,
 .page-school-news,
+.page-school-gallery,
 .view-news-school,
 .page-school-works {
 	.page-title-bar .container,
@@ -850,7 +852,9 @@ nav.header-nav {
 .node-type-page-students,
 .node-type-news-students,
 .node-type-work-students,
+.node-type-gallery-students,
 .page-students-news,
+.page-students-gallery,
 .view-news-students,
 .page-students-works {
 	.page-title-bar .container,
@@ -878,7 +882,12 @@ nav.header-nav {
 }
 
 
-
+// Cities
+.cities {
+	.item {
+		display: none;
+	}
+}
 
 
 // Main
@@ -1106,7 +1115,7 @@ nav.header-nav {
 			height: auto;
 		}
 		a {
-			display: block;
+			//display: block;
 			&:hover {
 				opacity: 0.8;
 			}
@@ -1139,7 +1148,7 @@ nav.header-nav {
   .news-item {
     margin-bottom: 30px;
 	p {
-		margin: 0;
+		//margin: 0;
 	  }
     .content {
       padding-left: 0;
@@ -1163,6 +1172,7 @@ nav.header-nav {
 }
 
 .news-block {
+	overflow: hidden;
 	.block-title {
 		font-size: 22px;
 		font-weight: bold;
@@ -1173,7 +1183,7 @@ nav.header-nav {
 	.news-item {
 		margin-bottom: 15px;
 		p {
-			margin: 0;
+			//margin: 0;
 			line-height: 1;
 		}
 		.title {
@@ -1207,15 +1217,24 @@ nav.header-nav {
 	.date {
 		font-size: 80%;
 		color: gray;
-		margin: 3px 0;
+		margin-bottom: 15px;
 	}
 	.likebtn {
 		margin-top: 5px;
 		float: left;
 	}
 	.share {
-		padding: 3px;
+		margin: 15px 0;
 	}
+	.field-type-image {
+		.field-item {
+			display: inline-block;
+			width: 30%;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+	}
+
 }
 
 
@@ -1375,10 +1394,25 @@ nav.header-nav {
 
 
 
+// Gallery
+.node-gallery-school,
+.node-gallery-students {
+	.field-item {
+		display: inline-block;
+		width: 25%;
+	}
+}
 
 
-
-
+.view-gallery-school {
+	.gallery-item {
+		h5 {
+			font-weight: bold;
+			display: inline-block;
+			height: 40px;
+		}
+	}
+}
 
 
 
