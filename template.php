@@ -199,14 +199,14 @@ function zu_pager($variables) {
     if ($pager_total[$element] > 1) {
         if ($li_previous) {
             $items[] = array(
-                'class' => array('pager-previous'),
+//                'class' => array('pager-previous'),
                 'data' => $li_previous,
             );
         }
 
         if ($show_first && $li_first) {
             $items[] = array(
-                'class' => array('pager-first'),
+//                'class' => array('pager-first'),
                 'data' => $li_first,
             );
         }
@@ -223,19 +223,19 @@ function zu_pager($variables) {
             for (; $i <= $pager_last && $i <= $pager_max; $i++) {
                 if ($i < $pager_current) {
                     $items[] = array(
-                        'class' => array('pager-item'),
+//                        'class' => array('pager-item'),
                         'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
                     );
                 }
                 if ($i == $pager_current) {
                     $items[] = array(
-                        'class' => array('pager-current'),
+                        'class' => array('active'),
                         'data' => '<span>' . $i . '</span>',
                     );
                 }
                 if ($i > $pager_current) {
                     $items[] = array(
-                        'class' => array('pager-item'),
+//                        'class' => array('pager-item'),
                         'data' => theme('pager_next', array('text' => $i, 'element' => $element, 'interval' => ($i - $pager_current), 'parameters' => $parameters)),
                     );
                 }
@@ -267,7 +267,7 @@ function zu_pager($variables) {
         }
         return '<h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
             'items' => $items,
-            'attributes' => array('class' => array('pager')),
+            'attributes' => array('class' => array('pagination')),
         ));
     }
 }

@@ -109,24 +109,11 @@ a {
 
 // Pager
 .item-list {
-    .pager {
+    .pagination {
 		margin: 15px 0;
 		padding-top: 15px;
-		li {
-			margin: 3px 0;
-			padding: 0;
-		}
-		li > a, 
-		li > span {
-			padding: 5px 12px;
-			border-radius: 0;
-		}
-		.pager-current {
-			width: 30px;
-			display: inline-block;
-			span {
-				background-color: @color-white;
-			}
+		.pager-ellipsis {
+			display: none;
 		}
 	}
 }
@@ -816,7 +803,12 @@ nav.header-nav {
 }
 
 
-
+.item-list {
+	text-align: center;
+	ul li {
+		margin: 0 !important;
+	}
+}
 
 
 
@@ -829,10 +821,19 @@ nav.header-nav {
 .page-school-gallery,
 .view-news-school,
 .page-school-works {
-	.page-title-bar .container,
-	.pager li a {
+	.page-title-bar .container {
 		color: @color-white;
 		background: @color-00;
+	}
+	.pagination > li > a,
+	.pagination > li > span {
+		background-color: @color-00;
+		&:hover {
+			background-color: darken(@color-00, 7%);
+		}
+	}
+	.pagination > li.active > span {
+		background-color: darken(@color-00, 10%);
 	}
 	a {
 		color: @color-00;
@@ -857,10 +858,19 @@ nav.header-nav {
 .page-students-gallery,
 .view-news-students,
 .page-students-works {
-	.page-title-bar .container,
-	.pager li a {
+	.page-title-bar .container {
 		color: @color-white;
 		background: @color-10;
+	}
+	.pagination > li > a,
+	.pagination > li > span {
+		background-color: @color-10;
+		&:hover {
+			background-color: darken(@color-10, 7%);
+		}
+	}
+	.pagination > li.active > span {
+		background-color: darken(@color-10, 10%);
 	}
 	a {
 		color: @color-10;
@@ -1028,23 +1038,34 @@ nav.header-nav {
 
 // Profile
 .profile2-profile {
-	.field {
-		width: 50%;
-		height: 20px;
-		display: inline-block;
-	}
-	.field-name-field-profile-image {
-		width: 260px !important;
-		height: 260px !important;
-		margin-right: 10px;
-		float: left;
-	}
+	//.field {
+	//	width: 50%;
+	//	height: 20px;
+	//	display: inline-block;
+	//}
+	//.field-name-field-profile-image {
+	//	width: 260px !important;
+	//	height: 260px !important;
+	//	margin-right: 10px;
+	//	float: left;
+	//}
 	.field-name-field-profile-onecollective {
 		display: none;
 	}
 	.field-name-field-profile-name,
 	.field-name-field-profile-sname {
 		font-weight: bold;
+	}
+}
+
+
+
+// Casting
+.webform-datepicker {
+	.form-item {
+		display: inline-block !important;
+		width: 28%;
+		margin: 0 2px 0 0;
 	}
 }
 
