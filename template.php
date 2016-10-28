@@ -271,3 +271,29 @@ function zu_pager($variables) {
         ));
     }
 }
+
+function zu_views_pre_render(&$view){
+    $used_nids = array();
+    $new_view_result = array();
+    if ($view->name == 'works_school'){
+        if ($view->current_display == 'works_school'){
+            foreach ($view->result as $row){
+                if (!in_array($row->nid, $used_nids)){
+                    $new_view_result[] = $row;
+                    $used_nids[] = $row->nid;
+                }
+            }
+            $view->result = $new_view_result;
+        }
+    } else if ($view->name == 'works_students'){
+        if ($view->current_display == 'works_students'){
+            foreach ($view->result as $row){
+                if (!in_array($row->nid, $used_nids)){
+                    $new_view_result[] = $row;
+                    $used_nids[] = $row->nid;
+                }
+            }
+            $view->result = $new_view_result;
+        }
+    }
+}
