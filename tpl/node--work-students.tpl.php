@@ -56,7 +56,7 @@
         <div class="container">
             <div class="col-lg-9 col-md-9">
                 <div class="work-content">
-                    <?php if($user->uid==279): ?>
+                    <?php if($user->uid==279 OR $user->uid==1): ?>
                         <div class="moderation">
                             <?php print render($content['field_students_moderation']); ?>
                             <a href='/node/<?=$node->nid?>/edit'>Редактировать</a>

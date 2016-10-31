@@ -272,6 +272,7 @@ function zu_pager($variables) {
     }
 }
 
+/*
 function zu_views_pre_render(&$view){
     $used_nids = array();
     $new_view_result = array();
@@ -297,3 +298,4 @@ function zu_views_pre_render(&$view){
         }
     }
 }
+*/
