@@ -59,7 +59,8 @@
                     <?php  if($user->uid==279 OR $user->uid==1): ?>
                         <div class="moderation">
                             <?php print render($content['field_school_moderation']); ?>
-                            <a href='/node/<?=$node->nid?>/edit'>Редактировать</a>
+                            <a href='/node/<?=$node->nid?>/edit'>Редактировать</a><br />
+                            <a href='/user/<?php echo $author->uid; ?>/edit'>Редактировать профиль</a><br />
                         </div>
                     <?php endif; ?>
                     <h2 class="title">
